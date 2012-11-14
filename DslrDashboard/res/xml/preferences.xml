@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="@string/pref_general_category"
+        android:key="pref_key_general"
+        >
+        <CheckBoxPreference 
+            android:key="pref_key_general_screen_on"
+            android:title="@string/pref_general_keep_scrren_on"
+            android:defaultValue="true"
+            />
+        <CheckBoxPreference 
+            android:key="pref_key_general_internal_viewer"
+            android:title="@string/pref_general_internal_viewer"
+            android:defaultValue="true"
+            />
+        </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_lv_category"
+        android:key="pref_key_liveview"
+        >
+        <CheckBoxPreference 
+            android:key="pref_key_lv_at_start"
+            android:title="@string/pref_lv_at_startup"
+            android:defaultValue="false"
+            />
+        <CheckBoxPreference 
+            android:key="pref_key_lv_return"
+            android:title="@string/pref_lv_return"
+            android:defaultValue="false"
+            />
+        
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_shooting"
+        android:key="pref_key_shooting"
+        >
+        <CheckBoxPreference 
+            android:key="pref_key_shooting_af"
+            android:title="@string/pref_shooting_af"
+            android:defaultValue="true"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_sdram_category"
+        android:key="pref_key_sdram"
+        >
+        <EditTextPreference
+            android:key="pref_key_sdram_saving_location"
+            android:title="@string/pref_sdram_location" 
+            />
+        <EditTextPreference 
+            android:key="pref_key_sdram_prefix"
+            android:title="@string/pref_sdram_prefix"
+            android:defaultValue="dslr" 
+            />
+        <EditTextPreference 
+            android:key="pref_key_sdram_numbering"
+            android:title="@string/pref_sdram_numbering"
+            android:defaultValue="1"
+            android:numeric="integer" 
+            />
+        
+    </PreferenceCategory>
+</PreferenceScreen>

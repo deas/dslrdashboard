@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd1d10x0000">2</string>
+    <string name="p0xd1d10x0001">3</string>
+    <string name="p0xd1d10x0002">4</string>
+    <string name="p0xd1d10x0003">5</string>
+    <string name="p0xd1d10x0004">6</string>
+    <string name="p0xd1d10x0005">7</string>
+    <string name="p0xd1d10x0006">8</string>
+    <string name="p0xd1d10x0007">9</string>
+    <string name="p0xd1d10x0008">10</string>
+    <string name="p0xd1d10x0009">15</string>
+    <string name="p0xd1d10x000a">20</string>
+    <string name="p0xd1d10x000b">25</string>
+    <string name="p0xd1d10x000c">30</string>
+    <string name="p0xd1d10x000d">35</string>
+    <item type="integer" name="v0xd1d10x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1d10x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd1d10x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd1d10x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0xd1d10x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0xd1d10x0005" format="integer">0x0005</item>
+    <item type="integer" name="v0xd1d10x0006" format="integer">0x0006</item>
+	<item type="integer" name="v0xd1d10x0007" format="integer">0x0007</item>
+	<item type="integer" name="v0xd1d10x0008" format="integer">0x0008</item>
+	<item type="integer" name="v0xd1d10x0009" format="integer">0x0009</item>
+	<item type="integer" name="v0xd1d10x000a" format="integer">0x000a</item>
+	<item type="integer" name="v0xd1d10x000b" format="integer">0x000b</item>
+    <item type="integer" name="v0xd1d10x000c" format="integer">0x000c</item>
+	<item type="integer" name="v0xd1d10x000d" format="integer">0x000d</item>
+</resources>

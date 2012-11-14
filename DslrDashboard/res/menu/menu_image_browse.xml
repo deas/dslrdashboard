@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_image_browse"
+        android:showAsAction="always"
+        />
+</menu>

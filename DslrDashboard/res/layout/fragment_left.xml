@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Black" 
+    >
+    
+    <com.dslr.dashboard.CheckableImageView
+        android:id="@+id/initiatecapture"
+        style="@style/ShutterButton"
+        android:src="@drawable/initiate_capture"
+        android:background="@drawable/checkableimageview"
+         />
+    
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+
+    	<LinearLayout
+    	    android:id="@+id/left_scroll_layout"
+        	android:orientation="vertical"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content" >
+        
+
+    	<com.dslr.dashboard.CheckableImageView
+        	android:id="@+id/autofocus"
+        	style="@style/CheckableImgView"
+        	android:src="@drawable/autofocus"
+        	android:background="@drawable/checkableimageview"
+         	/>
+
+    	<com.dslr.dashboard.CheckableImageView
+    	    android:id="@+id/movierec"
+    	    style="@style/CheckableImgView"
+    	    android:background="@drawable/checkableimageview"
+    	    android:src="@drawable/movierec" />
+    		
+    	</LinearLayout>
+  	</ScrollView>
+</LinearLayout>

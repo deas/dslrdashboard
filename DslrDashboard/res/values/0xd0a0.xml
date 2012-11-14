@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd0a00x0000_0423">320x216</string> <!-- D5000 -->
+    <string name="p0xd0a00x0001_0423">640x424</string>
+    <string name="p0xd0a00x0002_0423">1280x720</string>
+    <string name="p0xd0a00x0000_0428">640x424 30/25</string> <!-- D7000 -->
+    <string name="p0xd0a00x0001_0428">640x424 30/25 HQ</string>
+    <string name="p0xd0a00x0002_0428">1280x720 24</string>
+    <string name="p0xd0a00x0003_0428">1280x720 24 HQ</string>
+    <string name="p0xd0a00x0004_0428">1280x720 30/25</string>
+    <string name="p0xd0a00x0005_0428">1280x720 30/25 HQ</string>
+    <string name="p0xd0a00x0006_0428">1920x1080 24</string>
+    <string name="p0xd0a00x0007_0428">1920x1080 24 HQ</string>
+    <string name="p0xd0a00x0000_0429">640x424 30/25</string> <!-- D5100 -->
+    <string name="p0xd0a00x0001_0429">640x424 30/25 HQ</string>
+    <string name="p0xd0a00x0002_0429">1280x720 24</string>
+    <string name="p0xd0a00x0003_0429">1280x720 24 HQ</string>
+    <string name="p0xd0a00x0004_0429">1280x720 30/25</string>
+    <string name="p0xd0a00x0005_0429">1280x720 30/25 HQ</string>
+    <string name="p0xd0a00x0006_0429">1920x1080 24</string>
+    <string name="p0xd0a00x0007_0429">1920x1080 24 HQ</string>
+    <string name="p0xd0a00x0008_0429">1920x1080 30/25</string>
+    <string name="p0xd0a00x0009_0429">1920x1080 30/25 HQ</string>
+    <string name="p0xd0a00x0000_042a">1920x1080 30</string> <!-- D800 -->
+    <string name="p0xd0a00x0001_042a">1920x1080 25</string>
+    <string name="p0xd0a00x0002_042a">1920x1080 24</string>
+    <string name="p0xd0a00x0003_042a">1280x720 60</string>
+    <string name="p0xd0a00x0004_042a">1280x720 50</string>
+    <string name="p0xd0a00x0005_042a">1280x720 30</string>
+    <string name="p0xd0a00x0006_042a">1280x720 25</string>
+   	<item type="integer" name="v0xd0a00x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0a00x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd0a00x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd0a00x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0xd0a00x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0xd0a00x0005" format="integer">0x0005</item>
+	<item type="integer" name="v0xd0a00x0006" format="integer">0x0006</item>
+	<item type="integer" name="v0xd0a00x0007" format="integer">0x0007</item>
+	<item type="integer" name="v0xd0a00x0008" format="integer">0x0008</item>
+	<item type="integer" name="v0xd0a00x0009" format="integer">0x0009</item>
+	<item type="integer" name="v0xd0a00x0010" format="integer">0x0010</item>
+	<item type="integer" name="v0xd0a00x0011" format="integer">0x0011</item>
+	<item type="integer" name="v0xd0a00x0012" format="integer">0x0012</item>
+	<item type="integer" name="v0xd0a00x0013" format="integer">0x0013</item>
+	<item type="integer" name="v0xd0a00x0014" format="integer">0x0014</item>
+	<item type="integer" name="v0xd0a00x0015" format="integer">0x0015</item>
+	<item type="integer" name="v0xd0a00x0016" format="integer">0x0016</item>
+	<item type="integer" name="v0xd0a00x0017" format="integer">0x0017</item>
+	<item type="integer" name="v0xd0a00x0018" format="integer">0x0018</item>
+	<item type="integer" name="v0xd0a00x0019" format="integer">0x0019</item>
+</resources>

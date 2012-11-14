@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:id="@+id/focusstacking_scrollView"
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:columnCount="2" >
+
+        <TextView
+            style="@style/CodeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="1dip"
+            android:layout_row="0"
+            android:gravity="center_vertical"
+            android:text="Images to take:" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/focus_stacking_Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            style="@style/CodeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="1dip"
+            android:layout_row="1"
+            android:gravity="center_vertical"
+            android:text="Focus step:" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/focus_stacking_Step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            style="@style/CodeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="1dip"
+            android:layout_row="2"
+            android:gravity="center_vertical"
+            android:text="Direction:" >
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/focus_stacking_RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2" >
+
+            <RadioButton
+                android:id="@+id/focus_stacking_RadioDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="No limit -> Closest"
+                />
+
+            <RadioButton
+                android:id="@+id/focus_stacking_RadioUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Closest -> no limit"
+                />
+        </RadioGroup>
+
+        <Space
+            android:layout_width="21dp"
+            android:layout_height="15dp"
+            android:layout_column="0"
+            android:layout_row="3" />
+
+        <TextView
+            style="@style/CodeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_margin="1dip"
+            android:layout_row="4"
+            android:gravity="center_vertical"
+            android:text="Focus first:" >
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/focus_stacking_focus_first"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:layout_row="4"
+            android:gravity="center_vertical|center_horizontal" />
+        
+        <Space
+            android:layout_row="5"
+            android:layout_columnSpan="2"
+            android:layout_height="15dp" 
+            />
+        
+        <Button 
+            android:id="@+id/focus_stacking_start"
+            android:text="Start Focus Stacking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            />
+        
+    </GridLayout>
+</ScrollView>
+</FrameLayout>

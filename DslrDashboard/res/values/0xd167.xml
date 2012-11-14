@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd1670x0000">TTL mode</string>
+    <string name="p0xd1670x0001">Manual flash mode</string>
+    <string name="p0xd1670x0002">Repeating flash mode</string>
+    <string name="p0xd1670x0003">Commander mode</string>
+    <item type="integer" name="v0xd1670x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1670x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd1670x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd1670x0003" format="integer">0x0003</item>
+</resources>

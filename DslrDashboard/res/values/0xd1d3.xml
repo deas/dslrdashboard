@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd1d30x0000">1 CH</string>
+    <string name="p0xd1d30x0001">2 CH</string>
+    <string name="p0xd1d30x0002">3 CH</string>
+    <string name="p0xd1d30x0003">4 CH</string>
+    <item type="integer" name="v0xd1d30x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1d30x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd1d30x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd1d30x0003" format="integer">0x0003</item>
+</resources>

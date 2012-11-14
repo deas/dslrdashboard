@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/right_lv_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/lvzoomin"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/zoomin" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/lvzoomout"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/zoomout" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/lvfocusmode"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/zoomout" />
+
+        <TextView
+            android:id="@+id/afatliveview"
+            style="@style/CodeFont"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/checkableimageview"
+            android:text="0" />
+        
+        <TextView
+            android:id="@+id/videomode"
+            style="@style/CodeFont"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/checkableimageview"
+            android:text="0" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/movierecordsize"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/zoomout" />
+        
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/movierecordwithvoice"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/zoomout" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/movierecordmicrophonelevel"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/zoomout" />
+        
+    </LinearLayout>
+
+</ScrollView>

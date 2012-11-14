@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dslr.dashboard"
+    android:versionCode="21"
+    android:versionName="0.30.5" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />        
+    <application
+        android:icon="@drawable/dslrlauncher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo" android:hardwareAccelerated="true">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_main" 
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- intent-filter>
+                <action
+                    android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/usb_serial_device_filter" /-->
+            </activity>
+        <activity 
+            android:name=".UsbAttachedActivity"
+            android:label="@string/title_activity_main">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter" />
+        </activity>
+        <activity 
+            android:name=".UsbSerialAttachedActivity"
+            android:label="@string/title_activity_main">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/usb_serial_device_filter" />
+        </activity>
+        <service android:name=".PtpService"></service>
+        <service android:name=".UsbSerialService"></service>
+        <activity android:name=".ImageBrowseActivity" android:launchMode="standard" android:label="@string/app_name"></activity>     
+        <activity android:name=".DslrImageBrowserActivity" android:launchMode="standard" android:label="@string/app_name"></activity>     
+        <activity
+            android:name=".ImagePreviewActivity"
+            android:label="@string/app_name" 
+			android:launchMode="singleTask"> 
+    		<intent-filter>
+        		<action android:name="android.intent.action.VIEW" />
+        		<category android:name="android.intent.category.DEFAULT" />
+			    <category android:name="android.intent.category.BROWSABLE" />
+        		<data android:scheme="file"/>
+        		<data android:scheme="content"/>
+        		<data android:host="*"/>
+            	<data android:pathPattern=".*\\.NEF"/>
+            	<data android:pathPattern=".*\\.nef"/>
+            		<data android:mimeType="*/*" />
+            			</intent-filter>            
+        </activity>	</application>
+
+</manifest>

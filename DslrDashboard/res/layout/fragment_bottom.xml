@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:background="@color/Black" >
+
+            <ImageView
+                android:id="@+id/fullscreen"
+                style="@style/BottomButton"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/full_screen"
+                android:layout_alignParentLeft="true" 
+                />
+            
+            <TextView
+                android:id="@+id/txt_aelockstatus"
+                style="@style/BottomFont"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/fullscreen"
+                android:text="AE-L" />
+
+            <TextView
+                android:id="@+id/txt_shutter"
+                style="@style/BottomFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/txt_aperture"
+                android:gravity="center_vertical"
+                android:text="1/4" />
+
+            <TextView
+                android:id="@+id/txt_aperture"
+                style="@style/BottomFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/exposureindicator"
+                android:gravity="center_vertical"
+                android:text="F6.3" />
+
+            <com.dslr.dashboard.ExposureIndicatorDisplay
+                android:id="@+id/exposureindicator"
+                android:layout_height="36dp"
+                android:layout_width="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                />
+
+            <ImageView
+                android:id="@+id/flashcompensationindicator"
+                style="@style/BottomButton"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/exposureindicator"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/flashcompensation_indicator" />
+
+            <ImageView
+                android:id="@+id/evcompensationindicator"
+                style="@style/BottomButton"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/flashcompensationindicator"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/evcompensation_indicator" />
+
+            <TextView
+                android:id="@+id/txt_sdcard1"
+                style="@style/BottomFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/txt_sdcard2"
+                android:layout_gravity="center_vertical"
+                android:text="[E1]" />
+
+            <TextView
+                android:id="@+id/txt_sdcard2"
+                style="@style/BottomFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/flashindicator"
+                android:layout_gravity="center_vertical"
+                android:text="[E2]" />
+
+            <ImageView
+                android:id="@+id/flashindicator"
+                style="@style/BottomButton"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/lvlayoutswitch"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/flash_indicator" />
+
+            <ImageView
+                android:id="@+id/lvlayoutswitch"
+                style="@style/BottomButton"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/i0xd1a20x0000" />
+
+</RelativeLayout>

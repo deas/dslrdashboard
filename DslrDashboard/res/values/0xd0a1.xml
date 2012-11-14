@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd0a10x0000">On</string> <!-- D5000 -->
+    <string name="p0xd0a10x0001">Off</string>
+   	<item type="integer" name="v0xd0a10x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0a10x0001" format="integer">0x0001</item>
+</resources>

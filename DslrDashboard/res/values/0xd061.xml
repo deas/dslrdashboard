@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd0610x0000">S AF-S</string>
+    <string name="p0xd0610x0001">none</string>
+    <string name="p0xd0610x0002">C AF-S</string>
+    <string name="p0xd0610x0003">MF</string>
+	<item type="integer" name="v0xd0610x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0610x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd0610x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd0610x0003" format="integer">0x0003</item>
+</resources>

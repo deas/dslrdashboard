@@ -1,0 +1,75 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Holo" />
+    
+    <style name="CodeFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:minWidth">72dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+        
+    <style name="BottomFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/holo_green_light</item>
+    </style>
+    
+    <style name="ActionProviderImg" parent="@android:style/Widget.Holo.ImageButton">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_margin">1dp</item>
+        </style>
+    
+    <style name="CheckableImgView" parent="@android:style/Widget.Holo.ImageButton">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_margin">1dp</item>
+        </style>
+
+    <style name="BottomButton" >
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_margin">1dp</item>
+        </style>
+    
+    <style name="ShutterButton" parent="@android:style/Widget.Holo.ImageButton">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">144dp</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+    
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+ 
+    <style name="DialogText">
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+ 
+    <style name="DialogText.Title">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/HoloBlueLight</item>
+    </style>
+    
+    <style name="ListItemStyle" >
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:background">@color/LightGrey</item>
+    </style>
+    
+        
+</resources>

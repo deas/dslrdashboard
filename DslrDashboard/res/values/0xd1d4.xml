@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd1d40x0000">i-TTL flash</string>
+    <string name="p0xd1d40x0001">Manual flash</string>
+    <string name="p0xd1d40x0002">Non-flash</string>
+    <item type="integer" name="v0xd1d40x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1d40x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd1d40x0002" format="integer">0x0002</item>
+</resources>

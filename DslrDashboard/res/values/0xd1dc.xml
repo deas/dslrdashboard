@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd1dc0x0000">1/1</string>
+    <string name="p0xd1dc0x0001">1/1.3</string>
+    <string name="p0xd1dc0x0002">1/1.7</string>
+    <string name="p0xd1dc0x0003">1/2</string>
+    <string name="p0xd1dc0x0004">1/2.5</string>
+    <string name="p0xd1dc0x0005">1/3.2</string>
+    <string name="p0xd1dc0x0006">1/4</string>
+    <string name="p0xd1dc0x0007">1/5</string>
+    <string name="p0xd1dc0x0008">1/6.4</string>
+    <string name="p0xd1dc0x0009">1/8</string>
+    <string name="p0xd1dc0x000a">1/10</string>
+    <string name="p0xd1dc0x000b">1/13</string>
+    <string name="p0xd1dc0x000c">1/16</string>
+    <string name="p0xd1dc0x000d">1/20</string>
+    <string name="p0xd1dc0x000e">1/25</string>
+    <string name="p0xd1dc0x000f">1/32</string>
+    <string name="p0xd1dc0x0010">1/40</string>
+    <string name="p0xd1dc0x0011">1/50</string>
+    <string name="p0xd1dc0x0012">1/64</string>
+    <string name="p0xd1dc0x0013">1/80</string>
+    <string name="p0xd1dc0x0014">1/100</string>
+    <string name="p0xd1dc0x0015">1/128</string>
+    <item type="integer" name="v0xd1dc0x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1dc0x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd1dc0x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd1dc0x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0xd1dc0x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0xd1dc0x0005" format="integer">0x0005</item>
+	<item type="integer" name="v0xd1dc0x0006" format="integer">0x0006</item>
+	<item type="integer" name="v0xd1dc0x0007" format="integer">0x0007</item>
+	<item type="integer" name="v0xd1dc0x0008" format="integer">0x0008</item>
+	<item type="integer" name="v0xd1dc0x0009" format="integer">0x0009</item>
+	<item type="integer" name="v0xd1dc0x000a" format="integer">0x000a</item>
+	<item type="integer" name="v0xd1dc0x000b" format="integer">0x000b</item>
+	<item type="integer" name="v0xd1dc0x000c" format="integer">0x000c</item>
+	<item type="integer" name="v0xd1dc0x000d" format="integer">0x000d</item>
+	<item type="integer" name="v0xd1dc0x000e" format="integer">0x000e</item>
+	<item type="integer" name="v0xd1dc0x000f" format="integer">0x000f</item>
+	<item type="integer" name="v0xd1dc0x0010" format="integer">0x0010</item>
+	<item type="integer" name="v0xd1dc0x0011" format="integer">0x0011</item>
+	<item type="integer" name="v0xd1dc0x0012" format="integer">0x0012</item>
+	<item type="integer" name="v0xd1dc0x0013" format="integer">0x0013</item>
+	<item type="integer" name="v0xd1dc0x0014" format="integer">0x0014</item>
+	<item type="integer" name="v0xd1dc0x0015" format="integer">0x0015</item>
+</resources>

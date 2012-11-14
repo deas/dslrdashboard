@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_preview_menu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.dslr.dashboard.CheckableImageView
+        android:id="@+id/load_object_info"
+        style="@style/ActionProviderImg"
+        android:src="@drawable/content_import_export"
+        android:background="@drawable/checkableimageview"
+         />
+    
+    <com.dslr.dashboard.CheckableImageView
+        android:id="@+id/download_img"
+        style="@style/ActionProviderImg"
+        android:src="@drawable/av_download"
+        android:background="@drawable/checkableimageview"
+         />
+
+    <com.dslr.dashboard.CheckableImageView
+        android:id="@+id/select_all"
+        style="@style/ActionProviderImg"
+        android:background="@drawable/checkableimageview"
+        android:src="@drawable/content_select_all" />
+    
+    <com.dslr.dashboard.CheckableImageView
+        android:id="@+id/delete_selected"
+        style="@style/ActionProviderImg"
+        android:background="@drawable/checkableimageview"
+        android:src="@drawable/content_discard" />
+
+
+   
+</LinearLayout>

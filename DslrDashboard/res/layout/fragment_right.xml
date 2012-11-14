@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+    	android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/compressionsetting"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/i0x500e0x0001" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/imagesize"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/i0x500e0x0001" />
+
+        <TextView
+            android:id="@+id/iso"
+            style="@style/CodeFont"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/checkableimageview"
+            android:text="0" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/whitebalance"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/i0x500e0x0001" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/exposuremeteringmode"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/i0x500e0x0001" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/focusmeteringmode"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/i0x500e0x0001" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/afmodeselect"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/i0x500e0x0001" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/stillcapturemode"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/i0x500e0x0001" />
+
+        <TextView
+            android:id="@+id/burstnumber"
+            style="@style/CodeFont"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/exposurecompensation"
+            style="@style/CodeFont"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/checkableimageview"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/exposureevstep"
+            style="@style/CodeFont"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:text="0" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/activepicctrlitem"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/i0x500e0x0001" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/activedlightning"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/i0x500e0x0001" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/flashmode"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/i0x500e0x0001" />
+
+        <TextView
+            android:id="@+id/flashcompensation"
+            style="@style/CodeFont"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:text="0" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/enablebracketing"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/i0xd0c00x0000" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/bracketingtype"
+            style="@style/CheckableImgView"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/i0xd0c00x0000" />
+
+        <TextView
+            android:id="@+id/aebracketingstep"
+            style="@style/CodeFont"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:text="0" />
+        <TextView
+            android:id="@+id/aebracketingcount"
+            style="@style/CodeFont"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:text="0" />
+        <TextView
+            android:id="@+id/wbbracketingstep"
+            style="@style/CodeFont"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/checkableimageview"
+            android:text="0" />
+        
+        
+    </LinearLayout>
+
+</ScrollView>

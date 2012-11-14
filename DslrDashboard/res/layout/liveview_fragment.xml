@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.dslr.dashboard.LvSurfaceBase
+        android:id="@+id/lvsurface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/lv_histogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <ImageView
+        android:id="@+id/lvosdtoggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:src="@android:drawable/ic_menu_info_details" />
+    
+    <ImageView
+        android:id="@+id/lvfocustoggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@android:drawable/ic_menu_more" />
+    
+    <RelativeLayout
+        android:id="@+id/lvfocuslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/lvosdtoggle"
+        android:layout_toLeftOf="@+id/lvfocustoggle"
+        android:alpha="0.8" >
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/lvfocusmin"
+            style="@style/ActionProviderImg"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/lvfocusleft" />
+
+        <com.dslr.dashboard.AutoRepeatImageView
+            android:id="@+id/lvfocusleft"
+            style="@style/ActionProviderImg"
+            android:layout_toRightOf="@+id/lvfocusmin"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/lvfocusleftstep" />
+
+        <TextView
+            android:id="@+id/lvfocusstep"
+            style="@style/CodeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lvfocusleft"
+            android:background="@drawable/checkableimageview"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:text="10" />
+
+        <SeekBar
+            android:id="@+id/lvfocusstepseekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/lvfocusright"
+            android:layout_toRightOf="@+id/lvfocusstep"
+            android:max="100"
+            android:progress="10" />
+
+        <com.dslr.dashboard.CheckableImageView
+            android:id="@+id/lvfocusmax"
+            style="@style/ActionProviderImg"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/lvfocusright" />
+
+        <com.dslr.dashboard.AutoRepeatImageView
+            android:id="@+id/lvfocusright"
+            style="@style/ActionProviderImg"
+            android:layout_toLeftOf="@+id/lvfocusmax"
+            android:background="@drawable/checkableimageview"
+            android:src="@drawable/lvfocusrightstep" />
+    </RelativeLayout>
+
+</RelativeLayout>

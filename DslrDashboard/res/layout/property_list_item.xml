@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dslr.dashboard.CheckableRelativeLayout
+	android:id="@+id/relativeLayout1"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/list_item_selector_special"
+		android:padding="5dip"
+       	>
+
+    <ImageView
+        style="@style/ListItemStyle"
+    	android:id="@+id/imgViewLogo"
+    	android:src="@drawable/ic_launcher"
+    	android:layout_alignParentLeft="true"
+    	android:layout_centerInParent="true"
+    	>
+    </ImageView>
+
+    <TextView
+    	android:layout_height="wrap_content"
+    	android:text="TextView"
+    	android:layout_width="wrap_content"
+    	android:id="@+id/txtViewTitle"
+    	android:layout_toRightOf="@+id/imgViewLogo"
+    	android:layout_marginLeft="5dip"
+    	style="@style/DialogText"
+    	>
+    </TextView>
+
+</com.dslr.dashboard.CheckableRelativeLayout>

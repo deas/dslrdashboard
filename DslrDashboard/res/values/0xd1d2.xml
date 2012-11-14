@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd1d20x0000">1 Hz</string>
+    <string name="p0xd1d20x0001">2 Hz</string>
+    <string name="p0xd1d20x0002">3 Hz</string>
+    <string name="p0xd1d20x0003">4 Hz</string>
+    <string name="p0xd1d20x0004">5 Hz</string>
+    <string name="p0xd1d20x0005">6 Hz</string>
+    <string name="p0xd1d20x0006">7 Hz</string>
+    <string name="p0xd1d20x0007">8 Hz</string>
+    <string name="p0xd1d20x0008">9 Hz</string>
+    <string name="p0xd1d20x0009">10 Hz</string>
+    <string name="p0xd1d20x000a">20 Hz</string>
+    <string name="p0xd1d20x000b">30 Hz</string>
+    <string name="p0xd1d20x000c">40 Hz</string>
+    <string name="p0xd1d20x000d">50 Hz</string>
+    <item type="integer" name="v0xd1d20x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1d20x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd1d20x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd1d20x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0xd1d20x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0xd1d20x0005" format="integer">0x0005</item>
+    <item type="integer" name="v0xd1d20x0006" format="integer">0x0006</item>
+	<item type="integer" name="v0xd1d20x0007" format="integer">0x0007</item>
+	<item type="integer" name="v0xd1d20x0008" format="integer">0x0008</item>
+	<item type="integer" name="v0xd1d20x0009" format="integer">0x0009</item>
+	<item type="integer" name="v0xd1d20x000a" format="integer">0x000a</item>
+	<item type="integer" name="v0xd1d20x000b" format="integer">0x000b</item>
+    <item type="integer" name="v0xd1d20x000c" format="integer">0x000c</item>
+	<item type="integer" name="v0xd1d20x000d" format="integer">0x000d</item>
+</resources>

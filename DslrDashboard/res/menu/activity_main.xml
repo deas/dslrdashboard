@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settings"
+        android:title="@string/menu_settings"
+        android:orderInCategory="100"
+        android:icon="@drawable/action_settings"
+        android:showAsAction="never" />
+    <item android:id="@+id/menu_search_usb"
+        android:title="@string/menu_search_usb"
+        android:orderInCategory="100"
+        android:icon="@drawable/device_access_usb"
+        android:showAsAction="never"/>
+    <item android:id="@+id/menu_close_usb"
+        android:title="@string/menu_close_usb"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+    <item android:id="@+id/menu_action_test"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/menu_action_image_browse"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_gallery"/>
+</menu>

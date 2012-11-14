@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd1d00x0000">1/4</string>
+    <string name="p0xd1d00x0001">1/8</string>
+    <string name="p0xd1d00x0002">1/16</string>
+    <string name="p0xd1d00x0003">1/32</string>
+    <string name="p0xd1d00x0004">1/64</string>
+    <string name="p0xd1d00x0005">1/128</string>
+    <item type="integer" name="v0xd1d00x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1d00x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd1d00x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd1d00x0003" format="integer">0x0003</item>
+	<item type="integer" name="v0xd1d00x0004" format="integer">0x0004</item>
+	<item type="integer" name="v0xd1d00x0005" format="integer">0x0005</item>
+</resources>
