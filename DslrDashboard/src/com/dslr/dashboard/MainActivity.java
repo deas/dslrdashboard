@@ -165,6 +165,8 @@ public class MainActivity extends ActivityBase implements IDslrActivity {
 		super.onAttachFragment(fragment);
 		Log.d(TAG, "onAttachFragment");
 		try {
+			if (fragment instanceof DslrFragmentBase)
+				Log.d(TAG, "This is DslrFramentBase");
 			DslrFragmentBase dslrFragment = (DslrFragmentBase)fragment;
 			if (dslrFragment != null) {
 				if (!mFragments.contains(fragment)) {

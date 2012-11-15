@@ -19,6 +19,7 @@
 
 package com.dslr.dashboard;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -48,6 +49,7 @@ public class MainMenuProvider extends ActionProvider {
 		Log.d(TAG, "onCreateActionView");
 		LayoutInflater layoutInflater = LayoutInflater.from(mContext);
         View view = layoutInflater.inflate(R.layout.main_menu_provider,null);
+        
         
         mMenuLayout = (LinearLayout)view.findViewById(R.id.menu_layout);
         
@@ -115,8 +117,10 @@ public class MainMenuProvider extends ActionProvider {
         mFlashCommander.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
-				FlashDialog dialog = new FlashDialog(mContext);
-				dialog.show();
+				FlashCommanderFragment dialog = new FlashCommanderFragment();
+				dialog.show(((Activity)mContext).getFragmentManager().beginTransaction() , "flash_commnder");
+//				FlashDialog dialog = new FlashDialog(mContext);
+//				dialog.show();
 			}
 		});
         mFocusBracketing.setOnClickListener(new View.OnClickListener() {
@@ -170,6 +174,13 @@ public class MainMenuProvider extends ActionProvider {
 			else
 				mLiveView.setVisibility(View.GONE);
 			mCustomBracketing.setChecked(dslrHelper.getPtpDevice().getIsCustomBracketingEnabled());
+			
+			property = dslrHelper.getPtpDevice().getPtpProperty(PtpProperty.InternalFlashCommanderSelfComp);
+			if (property != null)
+				mFlashCommander.setVisibility(View.VISIBLE);
+			else
+				mFlashCommander.setVisibility(View.GONE);
+			
 		}
 	}
 	

@@ -20,11 +20,15 @@
 package com.dslr.dashboard;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.app.Fragment;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.view.View;
 
-public abstract class DslrFragmentBase extends Fragment {
+public abstract class DslrFragmentBase extends DialogFragment {
 	private IDslrActivity mActivity = null;
 	private boolean mIsAttached = false;
 	private PtpDevice mPtpDevice = null;
@@ -88,6 +92,7 @@ public abstract class DslrFragmentBase extends Fragment {
 			internalPtpPropertyChanged(property);
 		}
 	}
+
 	
 	protected abstract void internalInitFragment();
 	

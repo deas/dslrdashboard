@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="280dip"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" >
+
+        <GridLayout
+            android:id="@+id/flash_grid_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3" >
+
+            <TextView
+                android:id="@+id/txFlashRPT"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_row="0"
+                android:gravity="center_vertical|right"
+                android:text="Repeating flash:" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtflashrptintense"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@drawable/checkableimageview"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1/32" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtflashrptcout"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="@drawable/checkableimageview"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="10" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtflashrptinterval"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:background="@drawable/checkableimageview"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="10 Hz" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtFlashChannel"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_row="2"
+                android:gravity="center_vertical|right"
+                android:text="Internal Flash Commander Channel:" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtflashcommanderchannel"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:background="@drawable/checkableimageview"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1 CH" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtFlashSelf"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_row="4"
+                android:gravity="center_vertical|right"
+                android:text="Internal Flash Commander Self:" >
+            </TextView>
+
+            <com.dslr.dashboard.CheckableImageView
+                android:id="@+id/imginternalflashcommanderself"
+                style="@style/CheckableImgView"
+                android:layout_column="0"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_row="5"
+                android:background="@drawable/checkableimageview"
+                android:src="@drawable/i0x500e0x0001" />
+
+            <TextView
+                android:id="@+id/txtflashcommanderselfcomp"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
+                android:layout_row="5"
+                android:background="@drawable/checkableimageview"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="0" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtflashcommanderselfintense"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:layout_row="5"
+                android:background="@drawable/checkableimageview"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1/1" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtFlashGroupA"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_row="6"
+                android:gravity="center_vertical|right"
+                android:text="Internal Flash Commander group A:" >
+            </TextView>
+
+            <com.dslr.dashboard.CheckableImageView
+                android:id="@+id/imginternalflashcommandergroupa"
+                style="@style/CheckableImgView"
+                android:layout_column="0"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_row="7"
+                android:background="@drawable/checkableimageview"
+                android:src="@drawable/i0x500e0x0001" />
+
+            <TextView
+                android:id="@+id/txtflashcommandergroupacomp"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
+                android:layout_row="7"
+                android:background="@drawable/checkableimageview"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="0" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtflashcommandergroupaintense"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:layout_row="7"
+                android:background="@drawable/checkableimageview"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1/1" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtFlashGroupB"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_margin="2dip"
+                android:layout_row="8"
+                android:gravity="center_vertical|right"
+                android:text="Internal Flash Commander group B:" >
+            </TextView>
+
+            <com.dslr.dashboard.CheckableImageView
+                android:id="@+id/imginternalflashcommandergroupb"
+                style="@style/CheckableImgView"
+                android:layout_column="0"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_row="9"
+                android:background="@drawable/checkableimageview"
+                android:src="@drawable/i0x500e0x0001" />
+
+            <TextView
+                android:id="@+id/txtflashcommandergroupbcomp"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
+                android:layout_row="9"
+                android:background="@drawable/checkableimageview"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="0" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtflashcommandergroupbintense"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:layout_row="9"
+                android:background="@drawable/checkableimageview"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1/1" >
+            </TextView>
+            
+            
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

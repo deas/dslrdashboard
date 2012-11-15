@@ -52,7 +52,6 @@
         android:id="@+id/flash_commander"
         style="@style/ActionProviderImg"
         android:background="@drawable/checkableimageview"
-        android:visibility="gone"
         android:src="@drawable/flash_indicator" />
     
 </LinearLayout>
