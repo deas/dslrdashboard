@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd0f9">Scene Mode</string>
     <string name="p0xd0f90x0000">Night landscape</string>
     <string name="p0xd0f90x0001">Party/indoor</string>
     <string name="p0xd0f90x0002">Beach/snow</string>

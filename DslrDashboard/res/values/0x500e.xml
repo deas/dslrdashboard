@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0x500e">Exposure Program Mode</string>
     <string name="p0x500e0x0001">[M] Manual</string>
     <string name="p0x500e0x0002">[P] Program auto</string>
     <string name="p0x500e0x0003">[A] Aperture priority</string>

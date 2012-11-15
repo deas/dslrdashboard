@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd033">Auto DX Crop</string>
+    <string name="p0xd0330x0000">Off</string>
+    <string name="p0xd0330x0001">On</string>
+	<item type="integer" name="v0xd0330x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0330x0001" format="integer">0x0001</item>
+</resources>

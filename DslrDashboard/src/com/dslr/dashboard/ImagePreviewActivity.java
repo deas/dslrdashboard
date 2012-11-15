@@ -1,11 +1,21 @@
-// Copyright 2012 by Zoltan Hubai <hubaiz@gmail.com>
-//
-// This program is free software; you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation; either version 2 of the License, or
-// (at your option) any later version as long the source code includes
-// this copyright notice.
-// 
+/*
+	<DslrDashboard - controling DSLR camera with Android phone/tablet>
+    Copyright (C) <2012>  <Zoltan Hubai>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    
+ */
 
 package com.dslr.dashboard;
 
@@ -476,7 +486,7 @@ public class ImagePreviewActivity extends ActivityBase {
      * the listener will enter ZOOM mode.
      */
     private enum Mode {
-        UNDEFINED, PAN, ZOOM, PINCH
+        UNDEFINED, PAN, ZOOM, PINCH, FULLSCREEN
     }
 
     /** Time of tactile feedback vibration when entering zoom mode */
@@ -512,7 +522,7 @@ public class ImagePreviewActivity extends ActivityBase {
     /** Maximum velocity for fling */
     private int mScaledMaximumFlingVelocity;
 
-    float dist0, distCurrent;
+    float dist0, distCurrent, mCenterx, mCentery;
     
     private View.OnTouchListener mZoomListener = new View.OnTouchListener() {
 		
@@ -521,8 +531,8 @@ public class ImagePreviewActivity extends ActivityBase {
          */
         private final Runnable mLongPressRunnable = new Runnable() {
             public void run() {
-                mMode = Mode.ZOOM;
-                mVibrator.vibrate(VIBRATE_TIME);
+//                mMode = Mode.ZOOM;
+//                mVibrator.vibrate(VIBRATE_TIME);
             }
         };
 
@@ -547,18 +557,21 @@ public class ImagePreviewActivity extends ActivityBase {
                     mDownY = y;
                     mX = x;
                     mY = y;
+                    mMode = Mode.FULLSCREEN;
                     break;
 
                 case MotionEvent.ACTION_POINTER_DOWN:
                 	   //Get the distance when the second pointer touch
-//                	mMode = Mode.PINCH;
-//                    distx = event.getX(0) - event.getX(1);
-//                    disty = event.getY(0) - event.getY(1);
-//                    dist0 = FloatMath.sqrt(distx * distx + disty * disty);
-//                    Log.d(TAG, "Pinch mode");
+                	mMode = Mode.PINCH;
+                    distx = Math.abs(event.getX(0) - event.getX(1));
+                    disty = Math.abs(event.getY(0) - event.getY(1));
+                    dist0 = FloatMath.sqrt(distx * distx + disty * disty);
+                    mCenterx = ((event.getX(0) + event.getX(1)) / 2) / v.getWidth();
+                    mCentery = ((event.getY(0) + event.getY(1)) / 2) / v.getHeight();
+                    Log.d(TAG, "Pinch mode");
               	break;
                 case MotionEvent.ACTION_POINTER_UP:
-//                	mMode = Mode.PAN;
+                	mMode = Mode.UNDEFINED;
                 	break;
                 case MotionEvent.ACTION_MOVE: {
                     final float dx = (x - mX) / v.getWidth();
@@ -572,12 +585,13 @@ public class ImagePreviewActivity extends ActivityBase {
                         mZoomControl.pan(-dx, -dy);
                     } else if (mMode == Mode.PINCH) {
                         //Get the current distance
-                        distx = event.getX(0) - event.getX(1);
-                        disty = event.getY(0) - event.getY(1);
+                        distx = Math.abs(event.getX(0) - event.getX(1));
+                        disty = Math.abs(event.getY(0) - event.getY(1));
                         distCurrent = FloatMath.sqrt(distx * distx + disty * disty);
-                        //Log.d(TAG, "Pinch distance: "+  distCurrent + "rate: " + (distCurrent/dist0));
-                        mZoomControl.zoom((float)Math.pow(1.5, (distCurrent - dist0)/v.getWidth()), mDownX / v.getWidth(), mDownY
-                                / v.getHeight());
+                        float factor = (float)Math.pow(2, -(dist0 - distCurrent)/1000);
+                        mZoomControl.zoom(factor, mCenterx, mCentery);
+                    } else if (mMode == Mode.FULLSCREEN) {
+                    	mMode = Mode.PAN;
                     } else {
                         final float scrollX = mDownX - x;
                         final float scrollY = mDownY - y;
@@ -602,8 +616,10 @@ public class ImagePreviewActivity extends ActivityBase {
                         mZoomControl.startFling(-mVelocityTracker.getXVelocity() / v.getWidth(),
                                 -mVelocityTracker.getYVelocity() / v.getHeight());
                 		break;
-                	case UNDEFINED:
+                	case FULLSCREEN:
                 		toggleActionBar();
+                		break;
+                	case PINCH:
                 		break;
                 		default:
                             mZoomControl.startFling(0, 0);

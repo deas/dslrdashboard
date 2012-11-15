@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd131">HDR Ev</string>
+    <string name="p0xd1310x0000">Auto</string>
+    <string name="p0xd1310x0001">1 EV</string>
+    <string name="p0xd1310x0002">2 EV</string>
+    <string name="p0xd1310x0003">3 EV</string>
+    <item type="integer" name="v0xd1310x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1310x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd1310x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd1310x0003" format="integer">0x0003</item>
+</resources>

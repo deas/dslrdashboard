@@ -120,8 +120,8 @@ public class LongPressZoomListener implements View.OnTouchListener {
      */
     private final Runnable mLongPressRunnable = new Runnable() {
         public void run() {
-            mMode = Mode.ZOOM;
-            mVibrator.vibrate(VIBRATE_TIME);
+//            mMode = Mode.ZOOM;
+//            mVibrator.vibrate(VIBRATE_TIME);
         }
     };
 
@@ -150,14 +150,14 @@ public class LongPressZoomListener implements View.OnTouchListener {
 
             case MotionEvent.ACTION_POINTER_DOWN:
             	   //Get the distance when the second pointer touch
-//            	mMode = Mode.PINCH;
-//                distx = event.getX(0) - event.getX(1);
-//                disty = event.getY(0) - event.getY(1);
-//                dist0 = FloatMath.sqrt(distx * distx + disty * disty);
-//                Log.d(TAG, "Pinch mode");
+            	mMode = Mode.PINCH;
+                distx = Math.abs(event.getX(0) - event.getX(1));
+                disty = Math.abs(event.getY(0) - event.getY(1));
+                dist0 = FloatMath.sqrt((distx * distx) + (disty * disty));
+                Log.d(TAG, "Pinch mode");
           	break;
             case MotionEvent.ACTION_POINTER_UP:
-//            	mMode = Mode.PAN;
+            	mMode = Mode.PAN;
             	break;
             case MotionEvent.ACTION_MOVE: {
                 final float dx = (x - mX) / v.getWidth();
@@ -171,12 +171,14 @@ public class LongPressZoomListener implements View.OnTouchListener {
                     mZoomControl.pan(-dx, -dy);
                 } else if (mMode == Mode.PINCH) {
                     //Get the current distance
-                    distx = event.getX(0) - event.getX(1);
-                    disty = event.getY(0) - event.getY(1);
-                    distCurrent = FloatMath.sqrt(distx * distx + disty * disty);
+                    distx = Math.abs(event.getX(0) - event.getX(1));
+                    disty = Math.abs(event.getY(0) - event.getY(1));
+                    distCurrent = FloatMath.sqrt((distx * distx) + (disty * disty));
+                    float factor = (distCurrent / dist0) * 2f;
                     //Log.d(TAG, "Pinch distance: "+  distCurrent + "rate: " + (distCurrent/dist0));
-                    mZoomControl.zoom((float)Math.pow(1.5, (distCurrent - dist0)/v.getWidth()), mDownX / v.getWidth(), mDownY
-                            / v.getHeight());
+                    mZoomControl.zoom(factor, mDownX / v.getWidth(), mDownY / v.getHeight());
+//                    mZoomControl.zoom((float)Math.pow(1.5, (distCurrent - dist0)/v.getWidth()), mDownX / v.getWidth(), mDownY
+//                            / v.getHeight());
                 } else {
                     final float scrollX = mDownX - x;
                     final float scrollY = mDownY - y;
@@ -199,6 +201,8 @@ public class LongPressZoomListener implements View.OnTouchListener {
                     mVelocityTracker.computeCurrentVelocity(1000, mScaledMaximumFlingVelocity);
                     mZoomControl.startFling(-mVelocityTracker.getXVelocity() / v.getWidth(),
                             -mVelocityTracker.getYVelocity() / v.getHeight());
+                } else if (mMode == Mode.PINCH) {
+                	
                 } else {
                     mZoomControl.startFling(0, 0);
                 }

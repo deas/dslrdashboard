@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd148">Slot2 Image Save Mode</string>
+    <string name="p0xd1480x0000">Sequential recording</string>
+    <string name="p0xd1480x0001">Back-up recording</string>
+    <string name="p0xd1480x0002">RAW+JPEG division recording</string>
+    <item type="integer" name="v0xd1480x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1480x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd1480x0002" format="integer">0x0002</item>
+</resources>

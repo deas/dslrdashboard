@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd161">AF Mode Select</string>
     <string name="p0xd1610x0000">[S] Single AF servo</string>
 	<string name="p0xd1610x0001">[C] Continuous AF servo</string>
 	<string name="p0xd1610x0002">[A] AF servo mode automatic switching</string>

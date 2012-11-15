@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd0a7">Movie Record Quality</string>
+    <string name="p0xd0a70x0000">Normal</string>
+    <string name="p0xd0a70x0001">High image quality</string>
+	<item type="integer" name="v0xd0a70x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0a70x0001" format="integer">0x0001</item>
+</resources>

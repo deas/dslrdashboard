@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd167">Internal Flash Mode</string>
     <string name="p0xd1670x0000">TTL mode</string>
     <string name="p0xd1670x0001">Manual flash mode</string>
     <string name="p0xd1670x0002">Repeating flash mode</string>

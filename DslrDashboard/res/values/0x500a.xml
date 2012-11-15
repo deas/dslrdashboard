@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0x500a">Focus Mode</string>
 	<string name="p0x500a0x0001">[M] Manual focus</string>
 	<string name="p0x500a0x8010">[S] Single AF servo</string>
 	<string name="p0x500a0x8011">[C] Continuous AF servo</string>

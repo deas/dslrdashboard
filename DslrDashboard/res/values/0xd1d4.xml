@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd1d4">Flash Commander Self Mode</string>
     <string name="p0xd1d40x0000">i-TTL flash</string>
     <string name="p0xd1d40x0001">Manual flash</string>
     <string name="p0xd1d40x0002">Non-flash</string>

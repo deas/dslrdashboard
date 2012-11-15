@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd0c1">AE Bracketing step</string>
     <string name="p0xd0c10x0000">0.3 EV</string>
     <string name="p0xd0c10x0001">0.5 EV</string>
     <string name="p0xd0c10x0002">0.7 EV</string>

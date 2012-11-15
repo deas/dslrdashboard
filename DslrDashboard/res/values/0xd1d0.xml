@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd1d0">Internal Flash RPT Intense</string>
     <string name="p0xd1d00x0000">1/4</string>
     <string name="p0xd1d00x0001">1/8</string>
     <string name="p0xd1d00x0002">1/16</string>

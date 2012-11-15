@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd1d2">Flash RPT Interval</string>
     <string name="p0xd1d20x0000">1 Hz</string>
     <string name="p0xd1d20x0001">2 Hz</string>
     <string name="p0xd1d20x0002">3 Hz</string>

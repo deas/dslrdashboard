@@ -1,16 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0x5003">Image size</string>
+    
 	<string name="p0x50034288x2848">Size L (4288x2848)</string>
 	<string name="p0x50034928x3264">Size L (4928x3264)</string>
 	<string name="p0x50033216x2136">Size M (3216x2136)</string>
-	<string name="p0x50033696x2448">Size M (3696x2448)</string>
-	<string name="p0x50032144x1424">Size S (2144x1424)</string>
-	<string name="p0x50032464x1632">Size S (2464x1632)</string>
 	<string name="v0x50034288x2848">4288x2848</string>
 	<string name="v0x50033216x2136">3216x2136</string>
 	<string name="v0x50032144x1424">2144x1424</string>
+	
+	<string name="p0x50033696x2448">Size M (3696x2448)</string>
+	<string name="p0x50032144x1424">Size S (2144x1424)</string>
+	<string name="p0x50032464x1632">Size S (2464x1632)</string>
 	<string name="v0x50034928x3264">4928x3264</string>
 	<string name="v0x50033696x2448">3696x2448</string>
 	<string name="v0x50032464x1632">2464x1632</string>
 	
+<!-- D800 image sizes -->
+	<string name="p0x50037360x4912">Size L 7360x4912</string>
+	<string name="p0x50034800x3200">Size L 4800x3200</string>
+	<string name="p0x50036144x4912">Size L 6144x4912</string>
+	<string name="p0x50036144x4080">Size L 6144x4080</string>
+	<string name="p0x50035520x3680">Size M 5520x3680</string>
+	<string name="p0x50033600x2400">Size M 3600x2400</string>
+	<string name="p0x50034608x3680">Size M 4608x3680</string>
+	<string name="p0x50034608x3056">Size M 4608x3056</string>
+	<string name="p0x50033680x2456">Size S 3680x2456</string>
+	<string name="p0x50032400x1600">Size S 2400x1600</string>
+	<string name="p0x50033072x2456">Size S 3072x2456</string>
+	<string name="p0x50033072x2040">Size S 3072x2040</string>
+	<string name="p0x50036720x3776">Size L 6720x3776</string>
+	<string name="p0x50034800x2704">Size L 4800x2704</string>
+	<string name="p0x50035040x2832">Size M 5040x2832</string>
+	<string name="p0x50033600x2024">Size M 3600x2024</string>
+	<string name="p0x50033360x1888">Size S 3360x1888</string>
+	<string name="p0x50032400x1352">Size S 2400x1352</string>
+			
+	<string name="v0x50037360x4912">7360x4912</string>
+	<string name="v0x50034800x3200">4800x3200</string>
+	<string name="v0x50036144x4912">6144x4912</string>
+	<string name="v0x50036144x4080">6144x4080</string>
+	<string name="v0x50035520x3680">5520x3680</string>
+	<string name="v0x50033600x2400">3600x2400</string>
+	<string name="v0x50034608x3680">4608x3680</string>
+	<string name="v0x50034608x3056">4608x3056</string>
+	<string name="v0x50033680x2456">3680x2456</string>
+	<string name="v0x50032400x1600">2400x1600</string>
+	<string name="v0x50033072x2456">3072x2456</string>
+	<string name="v0x50033072x2040">3072x2040</string>
+	<string name="v0x50036720x3776">6720x3776</string>
+	<string name="v0x50034800x2704">4800x2704</string>
+	<string name="v0x50035040x2832">5040x2832</string>
+	<string name="v0x50033600x2024">3600x2024</string>
+	<string name="v0x50033360x1888">3360x1888</string>
+	<string name="v0x50032400x1352">2400x1352</string>
+					
+	<!-- D600 Image Sizes -->
+	<string name="p0x50036016x4016">Size L 6016x4016</string>
+	<string name="p0x50033936x2624">Size L 3936x2624</string>
+	<string name="p0x50034512x3008">Size M 4512x3008</string>
+	<string name="p0x50032944x1968">Size M 2944x1968</string>
+	<string name="p0x50033008x2008">Size S 3008x2008</string>
+	<string name="p0x50031968x1312">Size S 1968x1312</string>
+	<string name="p0x50036016x3376">Size L 6016x3376</string>
+	<string name="p0x50033936x2224">Size L 3936x2224</string>
+	<string name="p0x50034512x2528">Size M 4512x2528</string>
+	<string name="p0x50032944x1664">Size M 2944x1664</string>
+	<string name="p0x50033008x1688">Size S 3008x1688</string>
+	<string name="p0x50031968x1112">Size S 1968x1112</string>
+
+	<string name="v0x50036016x4016">6016x4016</string>
+	<string name="v0x50033936x2624">3936x2624</string>
+	<string name="v0x50034512x3008">4512x3008</string>
+	<string name="v0x50032944x1968">2944x1968</string>
+	<string name="v0x50033008x2008">3008x2008</string>
+	<string name="v0x50031968x1312">1968x1312</string>
+	<string name="v0x50036016x3376">6016x3376</string>
+	<string name="v0x50033936x2224">3936x2224</string>
+	<string name="v0x50034512x2528">4512x2528</string>
+	<string name="v0x50032944x1664">2944x1664</string>
+	<string name="v0x50033008x1688">3008x1688</string>
+	<string name="v0x50031968x1112">1968x1112</string>
+		
+	<!-- D80 -->			
+	<string name="p0x50033872x2592">Size L 3872x2592</string>
+	<string name="p0x50032896x1944">Size M 2896x1944</string>
+	<string name="p0x50031936x1296">Size S 1936x1296</string>
+
+	<string name="v0x50033872x2592">3872x2592</string>
+	<string name="v0x50032896x1944">2896x1944</string>
+	<string name="v0x50031936x1296">1936x1296</string>
+	<!-- D700 -->
+	<string name="p0x50034256x2832">Size L 4256x2832</string>
+	<string name="p0x50033184x2120">Size M 3184x2120</string>
+	<string name="p0x50032128x1416">Size S 2128x1416</string>
+	<string name="p0x50032784x1848">Size L 2784x1848</string>
+	<string name="p0x50032080x1384">Size M 2080x1384</string>
+	<string name="p0x50031392x920">Size S 1392x920</string>
+
+	<string name="v0x50034256x2832">4256x2832</string>
+	<string name="v0x50033184x2120">3184x2120</string>
+	<string name="v0x50032128x1416">2128x1416</string>
+	<string name="v0x50032784x1848">2784x1848</string>
+	<string name="v0x50032080x1384">2080x1384</string>
+	<string name="v0x50031392x920">1392x920</string>
+	
+	<!-- D3 -->
+	<string name="p0x50033552x2832">Size L 3552x2832</string>
+	<string name="p0x50032656x2120">Size M 2656x2120</string>
+	<string name="p0x50031776x1416">Size S 1776x1416</string>
+
+	<string name="v0x50033552x2832">3552x2832</string>
+	<string name="v0x50032656x2120">2656x2120</string>
+	<string name="v0x50031776x1416">1776x1416</string>
+	
+	<!-- D3S -->
+
+	<string name="p0x50033552x2368">Size L 3552x2368</string>
+	<string name="p0x50032656x1776">Size M 2656x1776</string>
+	<string name="p0x50031776x1184">Size S 1776x1184</string>
+
+	<string name="v0x50033552x2368">3552x2368</string>
+	<string name="v0x50032656x1776">2656x1776</string>
+	<string name="v0x50031776x1184">1776x1184</string>
+	
+	<!-- D3x -->
+	<string name="p0x50036048x4032">Size L 6048x4032</string>
+	<string name="p0x50034544x3024">Size M 4544x3024</string>
+	<string name="p0x50033024x2016">Size S 3024x2016</string>
+	<string name="p0x50033968x2640">Size L 3968x2640</string>
+	<string name="p0x50032976x1976">Size M 2976x1976</string>
+	<string name="p0x50031984x1320">Size S 1984x1320</string>
+	<string name="p0x50035056x4032">Size L 5056x4032</string>
+	<string name="p0x50033792x3024">Size M 3792x3024</string>
+	<string name="p0x50032528x2016">Size S 2528x2016</string>
+
+	<string name="v0x50036048x4032">6048x4032</string>
+	<string name="v0x50034544x3024">4544x3024</string>
+	<string name="v0x50033024x2016">3024x2016</string>
+	<string name="v0x50033968x2640">3968x2640</string>
+	<string name="v0x50032976x1976">2976x1976</string>
+	<string name="v0x50031984x1320">1984x1320</string>
+	<string name="v0x50035056x4032">5056x4032</string>
+	<string name="v0x50033792x3024">3792x3024</string>
+	<string name="v0x50032528x2016">2528x2016</string>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd1d7">Flash Commander Group A Mode</string>
     <string name="p0xd1d70x0000">i-TTL flash</string>
     <string name="p0xd1d70x0001">Aperture-interlocking external automatic flash</string>
     <string name="p0xd1d70x0002">Manual flash</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd0c4">WB Bracketing Step</string>
     <string name="p0xd0c40x0000">1 EV</string>
     <string name="p0xd0c40x0001">2 EV</string>
     <string name="p0xd0c40x0002">3 EV</string>

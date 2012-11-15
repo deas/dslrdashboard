@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dslr.dashboard"
     android:versionCode="21"
-    android:versionName="0.30.5" >
+    android:versionName="0.30.6" >
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="16" />
+        android:targetSdkVersion="17" />
 
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 	<uses-permission android:name="android.permission.RECORD_AUDIO"/>

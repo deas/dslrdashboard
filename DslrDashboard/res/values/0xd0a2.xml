@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd0a2">Movie Record Microphone Level</string>
     <string name="p0xd0a20x0000">Auto</string> 
     <string name="p0xd0a20x0001">High</string>
     <string name="p0xd0a20x0002">Medium</string>

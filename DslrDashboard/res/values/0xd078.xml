@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd078">Bracketing Type</string>
     <string name="p0xd0780x0000">AE/Flash bracketing</string>
     <string name="p0xd0780x0001">AE bracketing</string>
     <string name="p0xd0780x0002">Flash bracketing</string>

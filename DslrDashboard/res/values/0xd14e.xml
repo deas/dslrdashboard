@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd14e">Active D-Lighting</string>
     <string name="p0xd14e0x0000">Extra high</string>
     <string name="p0xd14e0x0001">High</string>
     <string name="p0xd14e0x0002">Normal</string>

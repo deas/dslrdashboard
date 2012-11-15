@@ -1,14 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device>
-	<ptpproperty id="5003">
+	<ptpproperty id="5003" deviceId="04b00410" title="@string/p0x5003">
+		<item value="@string/v0x50033872x2592" img="@drawable/i0x5003size_l" name="@string/p0x50033872x2592"/>
+		<item value="@string/v0x50032896x1944" img="@drawable/i0x5003size_m" name="@string/p0x50032896x1944"/>
+		<item value="@string/v0x50031936x1296" img="@drawable/i0x5003size_s" name="@string/p0x50031936x1296"/>
+	</ptpproperty>
+    <ptpproperty id="5003" deviceId="04b00412" title="@string/p0x5003">
+		<item value="@string/v0x50033872x2592" img="@drawable/i0x5003size_l" name="@string/p0x50033872x2592"/>
+		<item value="@string/v0x50032896x1944" img="@drawable/i0x5003size_m" name="@string/p0x50032896x1944"/>
+		<item value="@string/v0x50031936x1296" img="@drawable/i0x5003size_s" name="@string/p0x50031936x1296"/>
+	</ptpproperty>
+    <ptpproperty id="5003" deviceId="04b0041a" title="@string/p0x5003">
 		<item value="@string/v0x50034288x2848" img="@drawable/i0x5003size_l" name="@string/p0x50034288x2848"/>
 		<item value="@string/v0x50033216x2136" img="@drawable/i0x5003size_m" name="@string/p0x50033216x2136"/>
 		<item value="@string/v0x50032144x1424" img="@drawable/i0x5003size_s" name="@string/p0x50032144x1424"/>
+	</ptpproperty>
+    <ptpproperty id="5003" deviceId="04b0041c" title="@string/p0x5003">
+		<item value="@string/v0x50034256x2832" img="@drawable/i0x5003size_l" name="@string/p0x50034256x2832"/>
+		<item value="@string/v0x50033184x2120" img="@drawable/i0x5003size_m" name="@string/p0x50033184x2120"/>
+		<item value="@string/v0x50032128x1416" img="@drawable/i0x5003size_s" name="@string/p0x50032128x1416"/>
+		<item value="@string/v0x50032784x1848" img="@drawable/i0x5003size_l" name="@string/p0x50032784x1848"/>
+		<item value="@string/v0x50032080x1384" img="@drawable/i0x5003size_m" name="@string/p0x50032080x1384"/>
+		<item value="@string/v0x50031392x920" img="@drawable/i0x5003size_s" name="@string/p0x50031392x920"/>
+		<item value="@string/v0x50033552x2832" img="@drawable/i0x5003size_l" name="@string/p0x50033552x2832"/>
+		<item value="@string/v0x50032656x2120" img="@drawable/i0x5003size_m" name="@string/p0x50032656x2120"/>
+		<item value="@string/v0x50031776x1416" img="@drawable/i0x5003size_s" name="@string/p0x50031776x1416"/>
+	</ptpproperty>
+    <ptpproperty id="5003" deviceId="04b00420" title="@string/p0x5003">
+		<item value="@string/v0x50036048x4032" img="@drawable/i0x5003size_l" name="@string/p0x50036048x4032"/>
+		<item value="@string/v0x50034544x3024" img="@drawable/i0x5003size_m" name="@string/p0x50034544x3024"/>
+		<item value="@string/v0x50033024x2016" img="@drawable/i0x5003size_s" name="@string/p0x50033024x2016"/>
+		<item value="@string/v0x50033968x2640" img="@drawable/i0x5003size_l" name="@string/p0x50033968x2640"/>
+		<item value="@string/v0x50032976x1976" img="@drawable/i0x5003size_m" name="@string/p0x50032976x1976"/>
+		<item value="@string/v0x50031984x1320" img="@drawable/i0x5003size_s" name="@string/p0x50031984x1320"/>
+		<item value="@string/v0x50035056x4032" img="@drawable/i0x5003size_l" name="@string/p0x50035056x4032"/>
+		<item value="@string/v0x50033792x3024" img="@drawable/i0x5003size_m" name="@string/p0x50033792x3024"/>
+		<item value="@string/v0x50032528x2016" img="@drawable/i0x5003size_s" name="@string/p0x50032528x2016"/>
+	</ptpproperty>
+    <ptpproperty id="5003" deviceId="04b00421" title="@string/p0x5003">
+		<item value="@string/v0x50034288x2848" img="@drawable/i0x5003size_l" name="@string/p0x50034288x2848"/>
+		<item value="@string/v0x50033216x2136" img="@drawable/i0x5003size_m" name="@string/p0x50033216x2136"/>
+		<item value="@string/v0x50032144x1424" img="@drawable/i0x5003size_s" name="@string/p0x50032144x1424"/>
+	</ptpproperty>
+    <ptpproperty id="5003" deviceId="04b00422" title="@string/p0x5003">
+		<item value="@string/v0x50034256x2832" img="@drawable/i0x5003size_l" name="@string/p0x50034256x2832"/>
+		<item value="@string/v0x50033184x2120" img="@drawable/i0x5003size_m" name="@string/p0x50033184x2120"/>
+		<item value="@string/v0x50032128x1416" img="@drawable/i0x5003size_s" name="@string/p0x50032128x1416"/>
+		<item value="@string/v0x50032784x1848" img="@drawable/i0x5003size_l" name="@string/p0x50032784x1848"/>
+		<item value="@string/v0x50032080x1384" img="@drawable/i0x5003size_m" name="@string/p0x50032080x1384"/>
+		<item value="@string/v0x50031392x920" img="@drawable/i0x5003size_s" name="@string/p0x50031392x920"/>
+	</ptpproperty>
+    <ptpproperty id="5003" deviceId="04b00423" title="@string/p0x5003">
+		<item value="@string/v0x50034288x2848" img="@drawable/i0x5003size_l" name="@string/p0x50034288x2848"/>
+		<item value="@string/v0x50033216x2136" img="@drawable/i0x5003size_m" name="@string/p0x50033216x2136"/>
+		<item value="@string/v0x50032144x1424" img="@drawable/i0x5003size_s" name="@string/p0x50032144x1424"/>
+	</ptpproperty>
+    <ptpproperty id="5003" deviceId="04b00425" title="@string/p0x5003">
+		<item value="@string/v0x50034288x2848" img="@drawable/i0x5003size_l" name="@string/p0x50034288x2848"/>
+		<item value="@string/v0x50033216x2136" img="@drawable/i0x5003size_m" name="@string/p0x50033216x2136"/>
+		<item value="@string/v0x50032144x1424" img="@drawable/i0x5003size_s" name="@string/p0x50032144x1424"/>
+	</ptpproperty>
+    <ptpproperty id="5003" deviceId="04b00426" title="@string/p0x5003">
+		<item value="@string/v0x50034256x2832" img="@drawable/i0x5003size_l" name="@string/p0x50034256x2832"/>
+		<item value="@string/v0x50033184x2120" img="@drawable/i0x5003size_m" name="@string/p0x50033184x2120"/>
+		<item value="@string/v0x50032128x1416" img="@drawable/i0x5003size_s" name="@string/p0x50032128x1416"/>
+		<item value="@string/v0x50032784x1848" img="@drawable/i0x5003size_l" name="@string/p0x50032784x1848"/>
+		<item value="@string/v0x50032080x1384" img="@drawable/i0x5003size_m" name="@string/p0x50032080x1384"/>
+		<item value="@string/v0x50031392x920" img="@drawable/i0x5003size_s" name="@string/p0x50031392x920"/>
+		<item value="@string/v0x50033552x2832" img="@drawable/i0x5003size_l" name="@string/p0x50033552x2832"/>
+		<item value="@string/v0x50032656x2120" img="@drawable/i0x5003size_m" name="@string/p0x50032656x2120"/>
+		<item value="@string/v0x50031776x1416" img="@drawable/i0x5003size_s" name="@string/p0x50031776x1416"/>
+		<item value="@string/v0x50033552x2368" img="@drawable/i0x5003size_l" name="@string/p0x50033552x2368"/>
+		<item value="@string/v0x50032656x1776" img="@drawable/i0x5003size_m" name="@string/p0x50032656x1776"/>
+		<item value="@string/v0x50031776x1184" img="@drawable/i0x5003size_s" name="@string/p0x50031776x1184"/>
+	</ptpproperty>
+    <ptpproperty id="5003" deviceId="04b00428" title="@string/p0x5003">
 		<item value="@string/v0x50034928x3264" img="@drawable/i0x5003size_l" name="@string/p0x50034928x3264"/>
 		<item value="@string/v0x50033696x2448" img="@drawable/i0x5003size_m" name="@string/p0x50033696x2448"/>
 		<item value="@string/v0x50032464x1632" img="@drawable/i0x5003size_s" name="@string/p0x50032464x1632"/>
 	</ptpproperty>
-	<ptpproperty id="5004">
+	<ptpproperty id="5003" deviceId="04b00429" title="@string/p0x5003">
+		<item value="@string/v0x50034928x3264" img="@drawable/i0x5003size_l" name="@string/p0x50034928x3264"/>
+		<item value="@string/v0x50033696x2448" img="@drawable/i0x5003size_m" name="@string/p0x50033696x2448"/>
+		<item value="@string/v0x50032464x1632" img="@drawable/i0x5003size_s" name="@string/p0x50032464x1632"/>
+	</ptpproperty>
+	<ptpproperty id="5003" deviceId="04b0042a" title="@string/p0x5003">
+		<item value="@string/v0x50037360x4912" img="@drawable/i0x5003size_l" name="@string/p0x50037360x4912"/>
+		<item value="@string/v0x50035520x3680" img="@drawable/i0x5003size_m" name="@string/p0x50035520x3680"/>
+		<item value="@string/v0x50033680x2456" img="@drawable/i0x5003size_s" name="@string/p0x50033680x2456"/>
+		<item value="@string/v0x50034800x3200" img="@drawable/i0x5003size_l" name="@string/p0x50034800x3200"/>
+		<item value="@string/v0x50033600x2400" img="@drawable/i0x5003size_m" name="@string/p0x50033600x2400"/>
+		<item value="@string/v0x50032400x1600" img="@drawable/i0x5003size_s" name="@string/p0x50032400x1600"/>
+		<item value="@string/v0x50036144x4912" img="@drawable/i0x5003size_l" name="@string/p0x50036144x4912"/>
+		<item value="@string/v0x50034608x3680" img="@drawable/i0x5003size_m" name="@string/p0x50034608x3680"/>
+		<item value="@string/v0x50033072x2456" img="@drawable/i0x5003size_s" name="@string/p0x50033072x2456"/>
+		<item value="@string/v0x50036144x4080" img="@drawable/i0x5003size_l" name="@string/p0x50036144x4080"/>
+		<item value="@string/v0x50034608x3056" img="@drawable/i0x5003size_m" name="@string/p0x50034608x3056"/>
+		<item value="@string/v0x50033072x2040" img="@drawable/i0x5003size_s" name="@string/p0x50033072x2040"/>
+		<item value="@string/v0x50036720x3776" img="@drawable/i0x5003size_l" name="@string/p0x50036720x3776"/>
+		<item value="@string/v0x50035040x2832" img="@drawable/i0x5003size_m" name="@string/p0x50035040x2832"/>
+		<item value="@string/v0x50033360x1888" img="@drawable/i0x5003size_s" name="@string/p0x50033360x1888"/>
+		<item value="@string/v0x50034800x2704" img="@drawable/i0x5003size_l" name="@string/p0x50034800x2704"/>
+		<item value="@string/v0x50033600x2024" img="@drawable/i0x5003size_m" name="@string/p0x50033600x2024"/>
+		<item value="@string/v0x50032400x1352" img="@drawable/i0x5003size_s" name="@string/p0x50032400x1352"/>
+	</ptpproperty>
+	<ptpproperty id="5003" deviceId="04b0042d" title="@string/p0x5003">
+		<item value="@string/v0x50036016x4016" img="@drawable/i0x5003size_l" name="@string/p0x50036016x4016"/>
+		<item value="@string/v0x50034512x3008" img="@drawable/i0x5003size_m" name="@string/p0x50034512x3008"/>
+		<item value="@string/v0x50033008x2008" img="@drawable/i0x5003size_s" name="@string/p0x50033008x2008"/>
+		<item value="@string/v0x50033936x2624" img="@drawable/i0x5003size_l" name="@string/p0x50033936x2624"/>
+		<item value="@string/v0x50032944x1968" img="@drawable/i0x5003size_m" name="@string/p0x50032944x1968"/>
+		<item value="@string/v0x50031968x1312" img="@drawable/i0x5003size_s" name="@string/p0x50031968x1312"/>
+		<item value="@string/v0x50036016x3376" img="@drawable/i0x5003size_l" name="@string/p0x50036016x3376"/>
+		<item value="@string/v0x50034512x2528" img="@drawable/i0x5003size_m" name="@string/p0x50034512x2528"/>
+		<item value="@string/v0x50033008x1688" img="@drawable/i0x5003size_s" name="@string/p0x50033008x1688"/>
+		<item value="@string/v0x50033936x2224" img="@drawable/i0x5003size_l" name="@string/p0x50033936x2224"/>
+		<item value="@string/v0x50032944x1664" img="@drawable/i0x5003size_m" name="@string/p0x50032944x1664"/>
+		<item value="@string/v0x50031968x1112" img="@drawable/i0x5003size_s" name="@string/p0x50031968x1112"/>
+	</ptpproperty>
+	<ptpproperty id="5004" title="@string/p0x5004">
 		<item value="@integer/v0x50040x0000" img="@drawable/i0x50040x0000" name="@string/p0x50040x0000"/>
 		<item value="@integer/v0x50040x0001" img="@drawable/i0x50040x0001" name="@string/p0x50040x0001"/>
 		<item value="@integer/v0x50040x0002" img="@drawable/i0x50040x0002" name="@string/p0x50040x0002"/>
@@ -18,7 +128,7 @@
 		<item value="@integer/v0x50040x0006" img="@drawable/i0x50040x0006" name="@string/p0x50040x0006"/>
 		<item value="@integer/v0x50040x0007" img="@drawable/i0x50040x0007" name="@string/p0x50040x0007"/>
 	</ptpproperty>
-	<ptpproperty id="5005">
+	<ptpproperty id="5005" title="@string/p0x5005">
 		<item value="@integer/v0x50050x0002" img="@drawable/i0x50050x0002" name="@string/p0x50050x0002"/>
 		<item value="@integer/v0x50050x0004" img="@drawable/i0x50050x0004" name="@string/p0x50050x0004"/>
 		<item value="@integer/v0x50050x0005" img="@drawable/i0x50050x0005" name="@string/p0x50050x0005"/>
@@ -29,19 +139,19 @@
 		<item value="@integer/v0x50050x8012" img="@drawable/i0x50050x8012" name="@string/p0x50050x8012"/>
 		<item value="@integer/v0x50050x8013" img="@drawable/i0x50050x8013" name="@string/p0x50050x8013"/>
 	</ptpproperty>
-	<ptpproperty id="500a">
+	<ptpproperty id="500a" title="@string/p0x500a">
 		<item value="@integer/v0x500a0x0001" img="@drawable/i0x500a0x0001" name="@string/p0x500a0x0001"/>
 		<item value="@integer/v0x500a0x8010" img="@drawable/i0x500a0x8010" name="@string/p0x500a0x8010"/>
 		<item value="@integer/v0x500a0x8011" img="@drawable/i0x500a0x8011" name="@string/p0x500a0x8011"/>
 		<item value="@integer/v0x500a0x8012" img="@drawable/i0x500a0x8012" name="@string/p0x500a0x8012"/>
 		<item value="@integer/v0x500a0x8013" img="@drawable/i0x500a0x8013" name="@string/p0x500a0x8013"/>
 	</ptpproperty>
-	<ptpproperty id="500b">
+	<ptpproperty id="500b" title="@string/p0x500b">
 		<item value="@integer/v0x500b0x0002" img="@drawable/i0x500b0x0002" name="@string/p0x500b0x0002"/>
 		<item value="@integer/v0x500b0x0003" img="@drawable/i0x500b0x0003" name="@string/p0x500b0x0003"/>
 		<item value="@integer/v0x500b0x0004" img="@drawable/i0x500b0x0004" name="@string/p0x500b0x0004"/>
 	</ptpproperty>
-	<ptpproperty id="500c">
+	<ptpproperty id="500c" title="@string/p0x500c">
 		<item value="@integer/v0x500c0x0002" img="@drawable/i0x500c0x0002" name="@string/p0x500c0x0002"/>
 		<item value="@integer/v0x500c0x0004" img="@drawable/i0x500c0x0004" name="@string/p0x500c0x0004"/>
 		<item value="@integer/v0x500c0x8010" img="@drawable/i0x500c0x8010" name="@string/p0x500c0x8010"/>
@@ -49,7 +159,7 @@
 		<item value="@integer/v0x500c0x8012" img="@drawable/i0x500c0x8012" name="@string/p0x500c0x8012"/>
 		<item value="@integer/v0x500c0x8013" img="@drawable/i0x500c0x8013" name="@string/p0x500c0x8013"/>
 	</ptpproperty>
-	<ptpproperty id="500e">
+	<ptpproperty id="500e" title="@string/p0x500e">
 		<item value="@integer/v0x500e0x0001" img="@drawable/i0x500e0x0001" name="@string/p0x500e0x0001"/>
 		<item value="@integer/v0x500e0x0002" img="@drawable/i0x500e0x0002" name="@string/p0x500e0x0002"/>
 		<item value="@integer/v0x500e0x0003" img="@drawable/i0x500e0x0003" name="@string/p0x500e0x0003"/>
@@ -67,7 +177,7 @@
 		<item value="@integer/v0x500e0x8050" img="@drawable/i0x500e0x8050" name="@string/p0x500e0x8050"/>
 		<item value="@integer/v0x500e0x8051" img="@drawable/i0x500e0x8051" name="@string/p0x500e0x8051"/>
 	</ptpproperty>
-	<ptpproperty id="500f">
+	<ptpproperty id="500f" title="@string/p0x500f">
 		<item value="@integer/v0x500f0x0032" name="@string/p0x500f0x0032"/>
 		<item value="@integer/v0x500f0x0040" name="@string/p0x500f0x0040"/>
 		<item value="@integer/v0x500f0x0048" name="@string/p0x500f0x0048"/>
@@ -101,9 +211,14 @@
 		<item value="@integer/v0x500f0x2328" name="@string/p0x500f0x2328"/>
 		<item value="@integer/v0x500f0x2710" name="@string/p0x500f0x2710"/>
 		<item value="@integer/v0x500f0x3200" name="@string/p0x500f0x3200"/>
+		<item value="@integer/v0x500f0x4e20" name="@string/p0x500f0x4e20"/>
+		<item value="@integer/v0x500f0x3840" name="@string/p0x500f0x3840"/>
+		<item value="@integer/v0x500f0x4650" name="@string/p0x500f0x4650"/>
+		<item value="@integer/v0x500f0x4e20" name="@string/p0x500f0x4e20"/>
 		<item value="@integer/v0x500f0x6400" name="@string/p0x500f0x6400"/>
+		<item value="@integer/v0x500f0xc800" name="@string/p0x500f0xc800"/>
 	</ptpproperty>
-	<ptpproperty id="5013">
+	<ptpproperty id="5013" title="@string/p0x5013">
 		<item value="@integer/v0x50130x0001" img="@drawable/i0x50130x0001" name="@string/p0x50130x0001"/>
 		<item value="@integer/v0x50130x0002" img="@drawable/i0x50130x0002" name="@string/p0x50130x0002"/>
 		<item value="@integer/v0x50130x8010" img="@drawable/i0x50130x8010" name="@string/p0x50130x8010"/>
@@ -115,7 +230,7 @@
 		<item value="@integer/v0x50130x8016" img="@drawable/i0x50130x8016" name="@string/p0x50130x8016"/>
 		<item value="@integer/v0x50130x8017" img="@drawable/i0x50130x8017" name="@string/p0x50130x8017"/>
 	</ptpproperty>
-	<ptpproperty id="501c">
+	<ptpproperty id="501c" title="@string/p0x501c">
 		<item value="@integer/v0x501c0x0002" img="@drawable/i0x501c0x0002" name="@string/p0x501c0x0002"/>
 		<item value="@integer/v0x501c0x8010" img="@drawable/i0x501c0x8010" name="@string/p0x501c0x8010"/>
 		<item value="@integer/v0x501c0x8011" img="@drawable/i0x501c0x8011" name="@string/p0x501c0x8011"/>
@@ -123,53 +238,90 @@
 		<item value="@integer/v0x501c0x8013" name="@string/p0x501c0x8013"/>
 		<item value="@integer/v0x501c0x8014" name="@string/p0x501c0x8014"/>
 	</ptpproperty>
-	<ptpproperty id="d056">
+	<ptpproperty id="d016" title="@string/p0xd016" islist="1">
+		<item value="@integer/v0xd0160x0000" name="@string/p0xd0160x0000"/>
+		<item value="@integer/v0xd0160x0001" name="@string/p0xd0160x0001"/>
+		<item value="@integer/v0xd0160x0002" name="@string/p0xd0160x0002"/>
+	</ptpproperty>
+	<ptpproperty id="d030" title="@string/p0xd030" islist="1">
+		<item value="@integer/v0xd0300x0000" img="@drawable/i0xd0300x0000" name="@string/p0xd0300x0000"/>
+		<item value="@integer/v0xd0300x0001" img="@drawable/i0xd0300x0001" name="@string/p0xd0300x0001"/>
+		<item value="@integer/v0xd0300x0002" img="@drawable/i0xd0300x0002" name="@string/p0xd0300x0002"/>
+		<item value="@integer/v0xd0300x0003" img="@drawable/i0xd0300x0003" name="@string/p0xd0300x0003"/>
+	</ptpproperty>
+	<ptpproperty id="d031" title="@string/p0xd031" islist="1">
+		<item value="@integer/v0xd0310x0000" name="@string/p0xd0310x0000"/>
+		<item value="@integer/v0xd0310x0001" name="@string/p0xd0310x0001"/>
+	</ptpproperty>
+	<ptpproperty id="d032" title="@string/p0xd032" islist="1">
+		<item value="@integer/v0xd0320x0000" name="@string/p0xd0320x0000"/>
+		<item value="@integer/v0xd0320x0001" name="@string/p0xd0320x0001"/>
+	</ptpproperty>
+	<ptpproperty id="d033" title="@string/p0xd033" islist="1">
+		<item value="@integer/v0xd0330x0000" name="@string/p0xd0330x0000"/>
+		<item value="@integer/v0xd0330x0001" name="@string/p0xd0330x0001"/>
+	</ptpproperty>
+	<ptpproperty id="d036" title="@string/p0xd036">
+		<item value="@integer/v0xd0360x0000" name="@string/p0xd0360x0000"/>
+		<item value="@integer/v0xd0360x0001" name="@string/p0xd0360x0001"/>
+	</ptpproperty>
+	<ptpproperty id="d054" title="@string/p0xd054" islist="1">
+		<item value="@integer/v0xd0540x0000" name="@string/p0xd0540x0000"/>
+		<item value="@integer/v0xd0540x0001" name="@string/p0xd0540x0001"/>
+	</ptpproperty>
+	<ptpproperty id="d056" title="@string/p0xd056">
 		<item value="@integer/v0xd0560x0000" name="@string/p0xd0560x0000"/>
 		<item value="@integer/v0xd0560x0001" name="@string/p0xd0560x0001"/>
 	</ptpproperty>
-	<ptpproperty id="d05d">
+	<ptpproperty id="d05d" title="@string/p0xd05d">
 		<item value="@integer/v0xd05d0x0000" img="@drawable/i0xd05d0x0000" name="@string/p0xd05d0x0000"/>
 		<item value="@integer/v0xd05d0x0001" img="@drawable/i0xd05d0x0001" name="@string/p0xd05d0x0001"/>
 		<item value="@integer/v0xd05d0x0002" img="@drawable/i0xd05d0x0002" name="@string/p0xd05d0x0002"/>
 		<item value="@integer/v0xd05d0x0003" img="@drawable/i0xd05d0x0003" name="@string/p0xd05d0x0003"/>
 	</ptpproperty>
-	<ptpproperty id="d036">
-		<item value="@integer/v0xd0360x0000" name="@string/p0xd0360x0000"/>
-		<item value="@integer/v0xd0360x0001" name="@string/p0xd0360x0001"/>
-	</ptpproperty>
-	<ptpproperty id="d061">
+	<ptpproperty id="d061" title="@string/p0xd061">
 		<item value="@integer/v0xd0610x0000" name="@string/p0xd0610x0000"/>
 		<item value="@integer/v0xd0610x0002" name="@string/p0xd0610x0002"/>
 		<item value="@integer/v0xd0610x0003" name="@string/p0xd0610x0003"/>
 	</ptpproperty>
-	<ptpproperty id="d078">
+	<ptpproperty id="d06b" title="@string/p0xd06b" islist="1">
+		<item value="@integer/v0xd06b0x0000" name="@string/p0xd06b0x0000"/>
+		<item value="@integer/v0xd06b0x0001" name="@string/p0xd06b0x0001"/>
+	</ptpproperty>
+	<ptpproperty id="d070" title="@string/p0xd070" islist="1">
+		<item value="@integer/v0xd0700x0000" name="@string/p0xd0700x0000"/>
+		<item value="@integer/v0xd0700x0001" name="@string/p0xd0700x0001"/>
+		<item value="@integer/v0xd0700x0002" name="@string/p0xd0700x0002"/>
+		<item value="@integer/v0xd0700x0003" name="@string/p0xd0700x0003"/>
+	</ptpproperty>
+	<ptpproperty id="d078" title="@string/p0xd078">
 		<item value="@integer/v0xd0780x0000" img="@drawable/i0xd0780x0001" name="@string/p0xd0780x0000"/>
 	    <item value="@integer/v0xd0780x0001" img="@drawable/i0xd0780x0001" name="@string/p0xd0780x0001"/>
 		<item value="@integer/v0xd0780x0002" img="@drawable/i0xd0780x0001" name="@string/p0xd0780x0002"/>
 	    <item value="@integer/v0xd0780x0003" img="@drawable/i0xd0780x0003" name="@string/p0xd0780x0003"/>
 		<item value="@integer/v0xd0780x0004" img="@drawable/i0xd0780x0004" name="@string/p0xd0780x0004"/>
 	</ptpproperty>
-	<ptpproperty id="d0a0" deviceId="04b00421">
+	<ptpproperty id="d0a0" deviceId="04b00421" title="@string/p0xd0a0">
 		<item value="@integer/v0xd0a00x0000" img="@drawable/i0xd0a00x0000_0x0423" name="@string/p0xd0a00x0000_0423"/>
 		<item value="@integer/v0xd0a00x0001" img="@drawable/i0xd0a00x0001_0x0423" name="@string/p0xd0a00x0001_0423"/>
 		<item value="@integer/v0xd0a00x0002" img="@drawable/i0xd0a00x0002_0x0423" name="@string/p0xd0a00x0002_0423"/>
 	</ptpproperty>
-	<ptpproperty id="d0a0" deviceId="04b00423">
+	<ptpproperty id="d0a0" deviceId="04b00423" title="@string/p0xd0a0">
 		<item value="@integer/v0xd0a00x0000" img="@drawable/i0xd0a00x0000_0x0423" name="@string/p0xd0a00x0000_0423"/>
 		<item value="@integer/v0xd0a00x0001" img="@drawable/i0xd0a00x0001_0x0423" name="@string/p0xd0a00x0001_0423"/>
 		<item value="@integer/v0xd0a00x0002" img="@drawable/i0xd0a00x0002_0x0423" name="@string/p0xd0a00x0002_0423"/>
 	</ptpproperty>
-	<ptpproperty id="d0a0" deviceId="04b00426">
+	<ptpproperty id="d0a0" deviceId="04b00426" title="@string/p0xd0a0">
 		<item value="@integer/v0xd0a00x0000" img="@drawable/i0xd0a00x0000_0x0423" name="@string/p0xd0a00x0000_0423"/>
 		<item value="@integer/v0xd0a00x0001" img="@drawable/i0xd0a00x0001_0x0423" name="@string/p0xd0a00x0001_0423"/>
 		<item value="@integer/v0xd0a00x0002" img="@drawable/i0xd0a00x0002_0x0423" name="@string/p0xd0a00x0002_0423"/>
 	</ptpproperty>
-		<ptpproperty id="d0a0" deviceId="04b00425">
+		<ptpproperty id="d0a0" deviceId="04b00425" title="@string/p0xd0a0">
 		<item value="@integer/v0xd0a00x0000" img="@drawable/i0xd0a00x0000_0x0423" name="@string/p0xd0a00x0000_0423"/>
 		<item value="@integer/v0xd0a00x0001" img="@drawable/i0xd0a00x0001_0x0423" name="@string/p0xd0a00x0001_0423"/>
 		<item value="@integer/v0xd0a00x0002" img="@drawable/i0xd0a00x0002_0x0423" name="@string/p0xd0a00x0002_0423"/>
 	</ptpproperty>
-		<ptpproperty id="d0a0" deviceId="04b00428">
+		<ptpproperty id="d0a0" deviceId="04b00428" title="@string/p0xd0a0">
 		<item value="@integer/v0xd0a00x0000" img="@drawable/i0xd0a00x0000_0x0429" name="@string/p0xd0a00x0000_0428"/>
 		<item value="@integer/v0xd0a00x0001" img="@drawable/i0xd0a00x0001_0x0429" name="@string/p0xd0a00x0001_0428"/>
 		<item value="@integer/v0xd0a00x0002" img="@drawable/i0xd0a00x0002_0x0429" name="@string/p0xd0a00x0002_0428"/>
@@ -187,7 +339,7 @@
 		<item value="@integer/v0xd0a00x0016" img="@drawable/i0xd0a00x0006_0x0429" name="@string/p0xd0a00x0006_0428"/>
 		<item value="@integer/v0xd0a00x0017" img="@drawable/i0xd0a00x0007_0x0429" name="@string/p0xd0a00x0007_0428"/>
 	</ptpproperty>
-	<ptpproperty id="d0a0" deviceId="04b00429">
+	<ptpproperty id="d0a0" deviceId="04b00429" title="@string/p0xd0a0">
 		<item value="@integer/v0xd0a00x0000" img="@drawable/i0xd0a00x0000_0x0429" name="@string/p0xd0a00x0000_0429"/>
 		<item value="@integer/v0xd0a00x0001" img="@drawable/i0xd0a00x0001_0x0429" name="@string/p0xd0a00x0001_0429"/>
 		<item value="@integer/v0xd0a00x0002" img="@drawable/i0xd0a00x0002_0x0429" name="@string/p0xd0a00x0002_0429"/>
@@ -207,7 +359,7 @@
 		<item value="@integer/v0xd0a00x0018" img="@drawable/i0xd0a00x0018_0x0429" name="@string/p0xd0a00x0008_0429"/>
 		<item value="@integer/v0xd0a00x0019" img="@drawable/i0xd0a00x0019_0x0429" name="@string/p0xd0a00x0009_0429"/>
 	</ptpproperty>
-	<ptpproperty id="d0a0" deviceId="04b0042a">
+	<ptpproperty id="d0a0" deviceId="04b0042a" title="@string/p0xd0a0">
 		<item value="@integer/v0xd0a00x0000" img="@drawable/i0xd0a00x0000_0x042a" name="@string/p0xd0a00x0000_042a"/>
 		<item value="@integer/v0xd0a00x0001" img="@drawable/i0xd0a00x0001_0x042a" name="@string/p0xd0a00x0001_042a"/>
 		<item value="@integer/v0xd0a00x0002" img="@drawable/i0xd0a00x0002_0x042a" name="@string/p0xd0a00x0002_042a"/>
@@ -216,7 +368,7 @@
 		<item value="@integer/v0xd0a00x0005" img="@drawable/i0xd0a00x0005_0x042a" name="@string/p0xd0a00x0005_042a"/>
 		<item value="@integer/v0xd0a00x0006" img="@drawable/i0xd0a00x0006_0x042a" name="@string/p0xd0a00x0006_042a"/>
 	</ptpproperty>
-	<ptpproperty id="d0a0" deviceId="04b0042e">
+	<ptpproperty id="d0a0" deviceId="04b0042e" title="@string/p0xd0a0">
 		<item value="@integer/v0xd0a00x0000" img="@drawable/i0xd0a00x0000_0x042a" name="@string/p0xd0a00x0000_042a"/>
 		<item value="@integer/v0xd0a00x0001" img="@drawable/i0xd0a00x0001_0x042a" name="@string/p0xd0a00x0001_042a"/>
 		<item value="@integer/v0xd0a00x0002" img="@drawable/i0xd0a00x0002_0x042a" name="@string/p0xd0a00x0002_042a"/>
@@ -225,7 +377,7 @@
 		<item value="@integer/v0xd0a00x0005" img="@drawable/i0xd0a00x0005_0x042a" name="@string/p0xd0a00x0005_042a"/>
 		<item value="@integer/v0xd0a00x0006" img="@drawable/i0xd0a00x0006_0x042a" name="@string/p0xd0a00x0006_042a"/>
 	</ptpproperty>
-		<ptpproperty id="d0a0" deviceId="04b0042d">
+	<ptpproperty id="d0a0" deviceId="04b0042d" title="@string/p0xd0a0">
 		<item value="@integer/v0xd0a00x0000" img="@drawable/i0xd0a00x0000_0x042a" name="@string/p0xd0a00x0000_042a"/>
 		<item value="@integer/v0xd0a00x0001" img="@drawable/i0xd0a00x0001_0x042a" name="@string/p0xd0a00x0001_042a"/>
 		<item value="@integer/v0xd0a00x0002" img="@drawable/i0xd0a00x0002_0x042a" name="@string/p0xd0a00x0002_042a"/>
@@ -234,51 +386,59 @@
 		<item value="@integer/v0xd0a00x0005" img="@drawable/i0xd0a00x0005_0x042a" name="@string/p0xd0a00x0005_042a"/>
 		<item value="@integer/v0xd0a00x0006" img="@drawable/i0xd0a00x0006_0x042a" name="@string/p0xd0a00x0006_042a"/>
 	</ptpproperty>
-	<ptpproperty id="d0a1">
+	<ptpproperty id="d0a1" title="@string/p0xd0a1">
 		<item value="@integer/v0xd0a10x0000" img="@drawable/i0xd0a10x0000" name="@string/p0xd0a10x0000"/>
 		<item value="@integer/v0xd0a10x0001" img="@drawable/i0xd0a10x0001" name="@string/p0xd0a10x0001"/>
 	</ptpproperty>
-	<ptpproperty id="d0a2" deviceId="04b00425">
+	<ptpproperty id="d0a2" deviceId="04b00425" title="@string/p0xd0a2">
 		<item value="@integer/v0xd0a20x0000" img="@drawable/i0xd0a20x0000" name="@string/p0xd0a20x0000"/>
 		<item value="@integer/v0xd0a20x0001" img="@drawable/i0xd0a20x0001" name="@string/p0xd0a20x0001"/>
 		<item value="@integer/v0xd0a20x0002" img="@drawable/i0xd0a20x0002" name="@string/p0xd0a20x0002"/>
 		<item value="@integer/v0xd0a20x0003" img="@drawable/i0xd0a20x0003" name="@string/p0xd0a20x0003"/>
 		<item value="@integer/v0xd0a20x0004" img="@drawable/i0xd0a10x0001" name="@string/p0xd0a20x0004"/>
 	</ptpproperty>
-	<ptpproperty id="d0a2" deviceId="04b00428">
+	<ptpproperty id="d0a2" deviceId="04b00428" title="@string/p0xd0a2">
 		<item value="@integer/v0xd0a20x0000" img="@drawable/i0xd0a20x0000" name="@string/p0xd0a20x0000"/>
 		<item value="@integer/v0xd0a20x0001" img="@drawable/i0xd0a20x0001" name="@string/p0xd0a20x0001"/>
 		<item value="@integer/v0xd0a20x0002" img="@drawable/i0xd0a20x0002" name="@string/p0xd0a20x0002"/>
 		<item value="@integer/v0xd0a20x0003" img="@drawable/i0xd0a20x0003" name="@string/p0xd0a20x0003"/>
 		<item value="@integer/v0xd0a20x0004" img="@drawable/i0xd0a10x0001" name="@string/p0xd0a20x0004"/>
 	</ptpproperty>
-	<ptpproperty id="d0a2" deviceId="04b00429">
+	<ptpproperty id="d0a2" deviceId="04b00429" title="@string/p0xd0a2">
 		<item value="@integer/v0xd0a20x0000" img="@drawable/i0xd0a20x0000" name="@string/p0xd0a20x0000"/>
 		<item value="@integer/v0xd0a20x0001" img="@drawable/i0xd0a20x0001" name="@string/p0xd0a20x0001"/>
 		<item value="@integer/v0xd0a20x0002" img="@drawable/i0xd0a20x0002" name="@string/p0xd0a20x0002"/>
 		<item value="@integer/v0xd0a20x0003" img="@drawable/i0xd0a20x0003" name="@string/p0xd0a20x0003"/>
 		<item value="@integer/v0xd0a20x0004" img="@drawable/i0xd0a10x0001" name="@string/p0xd0a20x0004"/>
 	</ptpproperty>
-	<ptpproperty id="d0a2" deviceId="04b0042a">
+	<ptpproperty id="d0a2" deviceId="04b0042a" title="@string/p0xd0a2">
 		<item value="@integer/v0xd0a20x0000" img="@drawable/i0xd0a20x0000" name="@string/p0xd0a20x0000"/>
 		<item value="@integer/v0xd0a20x0004" img="@drawable/i0xd0a10x0001" name="@string/p0xd0a20x0004"/>
 		<item value="@integer/v0xd0a20x0005" img="@drawable/i0xd0a20x0005" name="@string/p0xd0a20x0005"/>
 	</ptpproperty>
-	<ptpproperty id="d0a2" deviceId="04b0042e">
+	<ptpproperty id="d0a2" deviceId="04b0042e" title="@string/p0xd0a2">
 		<item value="@integer/v0xd0a20x0000" img="@drawable/i0xd0a20x0000" name="@string/p0xd0a20x0000"/>
 		<item value="@integer/v0xd0a20x0004" img="@drawable/i0xd0a10x0001" name="@string/p0xd0a20x0004"/>
 		<item value="@integer/v0xd0a20x0005" img="@drawable/i0xd0a20x0005" name="@string/p0xd0a20x0005"/>
 	</ptpproperty>
-		<ptpproperty id="d0a2" deviceId="04b0042d">
+		<ptpproperty id="d0a2" deviceId="04b0042d" title="@string/p0xd0a2">
 		<item value="@integer/v0xd0a20x0000" img="@drawable/i0xd0a20x0000" name="@string/p0xd0a20x0000"/>
 		<item value="@integer/v0xd0a20x0004" img="@drawable/i0xd0a10x0001" name="@string/p0xd0a20x0004"/>
 		<item value="@integer/v0xd0a20x0005" img="@drawable/i0xd0a20x0005" name="@string/p0xd0a20x0005"/>
 	</ptpproperty>
-	<ptpproperty id="d0c0">
+	<ptpproperty id="d0a3" title="@string/p0xd0a3" islist="1">
+		<item value="@integer/v0xd0a30x0000" name="@string/p0xd0a30x0000"/>
+		<item value="@integer/v0xd0a30x0001" name="@string/p0xd0a30x0001"/>
+	</ptpproperty>
+	<ptpproperty id="d0a7" title="@string/p0xd0a7" islist="1">
+		<item value="@integer/v0xd0a70x0000" name="@string/p0xd0a70x0000"/>
+		<item value="@integer/v0xd0a70x0001" name="@string/p0xd0a70x0001"/>
+	</ptpproperty>
+	<ptpproperty id="d0c0" title="@string/p0xd0c0">
 		<item value="@integer/v0xd0c00x0000" img="@drawable/i0xd0c00x0000" name="@string/p0xd0c00x0000"/>
 		<item value="@integer/v0xd0c00x0001" img="@drawable/i0xd0c00x0000" name="@string/p0xd0c00x0001"/>
 	</ptpproperty>
-	<ptpproperty id="d0c1">
+	<ptpproperty id="d0c1" title="@string/p0xd0c1">
 		<item value="@integer/v0xd0c10x0000" name="@string/p0xd0c10x0000"/>
 		<item value="@integer/v0xd0c10x0001" name="@string/p0xd0c10x0001"/>
 		<item value="@integer/v0xd0c10x0002" name="@string/p0xd0c10x0002"/>
@@ -288,12 +448,22 @@
 		<item value="@integer/v0xd0c10x0006" name="@string/p0xd0c10x0006"/>
 		<item value="@integer/v0xd0c10x0007" name="@string/p0xd0c10x0007"/>
 	</ptpproperty>
-	<ptpproperty id="d0c4">
+	<ptpproperty id="d0c4" title="@string/p0xd0c4">
 		<item value="@integer/v0xd0c40x0000" name="@string/p0xd0c40x0000"/>
 		<item value="@integer/v0xd0c40x0001" name="@string/p0xd0c40x0001"/>
 		<item value="@integer/v0xd0c40x0002" name="@string/p0xd0c40x0002"/>
 	</ptpproperty>
-	<ptpproperty id="d0f9">
+	<ptpproperty id="d0f7" title="@string/p0xd0f7" islist="1">
+		<item value="@integer/v0xd0f70x0000" name="@string/p0xd0f70x0000"/>
+		<item value="@integer/v0xd0f70x0001" name="@string/p0xd0f70x0001"/>
+		<item value="@integer/v0xd0f70x0002" name="@string/p0xd0f70x0002"/>
+		<item value="@integer/v0xd0f70x0003" name="@string/p0xd0f70x0003"/>
+	</ptpproperty>
+	<ptpproperty id="d0f8" title="@string/p0xd0f8" islist="1">
+		<item value="@integer/v0xd0f80x0000" name="@string/p0xd0f80x0000"/>
+		<item value="@integer/v0xd0f80x0001" name="@string/p0xd0f80x0001"/>
+	</ptpproperty>
+	<ptpproperty id="d0f9" title="@string/p0xd0f9">
 		<item value="@integer/v0xd0f90x0000" img="@drawable/i0xd0f90x0000" name="@string/p0xd0f90x0000"/>
 		<item value="@integer/v0xd0f90x0001" img="@drawable/i0xd0f90x0001" name="@string/p0xd0f90x0001"/>
 		<item value="@integer/v0xd0f90x0002" img="@drawable/i0xd0f90x0002" name="@string/p0xd0f90x0002"/>
@@ -308,11 +478,37 @@
 		<item value="@integer/v0xd0f90x000b" img="@drawable/i0xd0f90x000b" name="@string/p0xd0f90x000b"/>
 		<item value="@integer/v0xd0f90x000c" img="@drawable/i0xd0f90x000c" name="@string/p0xd0f90x000c"/>
 	</ptpproperty>
-	<ptpproperty id="d10b">
+	<ptpproperty id="d10b" title="@string/p0xd10b">
 		<item value="@integer/v0xd10b0x0000" name="@string/p0xd10b0x0000"/>
 		<item value="@integer/v0xd10b0x0001" name="@string/p0xd10b0x0001"/>
+		<item value="@integer/v0xd10b0x0002" name="@string/p0xd10b0x0002"/>
 	</ptpproperty>
-	<ptpproperty id="d14e">
+	<ptpproperty id="d130" title="@string/p0xd130" islist="1">
+		<item value="@integer/v0xd1300x0000" name="@string/p0xd1300x0000"/>
+		<item value="@integer/v0xd1300x0001" name="@string/p0xd1300x0001"/>
+		<item value="@integer/v0xd1300x0002" name="@string/p0xd1300x0002"/>
+	</ptpproperty>
+	<ptpproperty id="d131" title="@string/p0xd131" islist="1">
+		<item value="@integer/v0xd1310x0000" name="@string/p0xd1310x0000"/>
+		<item value="@integer/v0xd1310x0001" name="@string/p0xd1310x0001"/>
+		<item value="@integer/v0xd1310x0002" name="@string/p0xd1310x0002"/>
+		<item value="@integer/v0xd1310x0003" name="@string/p0xd1310x0003"/>
+	</ptpproperty>
+	<ptpproperty id="d132" title="@string/p0xd132" islist="1">
+		<item value="@integer/v0xd1320x0000" name="@string/p0xd1320x0000"/>
+		<item value="@integer/v0xd1320x0001" name="@string/p0xd1320x0001"/>
+		<item value="@integer/v0xd1320x0002" name="@string/p0xd1320x0002"/>
+	</ptpproperty>
+	<ptpproperty id="d148" title="@string/p0xd148" islist="1">
+		<item value="@integer/v0xd1480x0000" name="@string/p0xd1480x0000"/>
+		<item value="@integer/v0xd1480x0001" name="@string/p0xd1480x0001"/>
+		<item value="@integer/v0xd1480x0002" name="@string/p0xd1480x0002"/>
+	</ptpproperty>
+	<ptpproperty id="d149" title="@string/p0xd149" islist="1">
+		<item value="@integer/v0xd1490x0000" name="@string/p0xd1490x0000"/>
+		<item value="@integer/v0xd1490x0001" name="@string/p0xd1490x0001"/>
+	</ptpproperty>
+	<ptpproperty id="d14e" title="@string/p0xd14e">
 		<item value="@integer/v0xd14e0x0000" img="@drawable/i0xd14e0x0000" name="@string/p0xd14e0x0000"/>
 		<item value="@integer/v0xd14e0x0001" img="@drawable/i0xd14e0x0001" name="@string/p0xd14e0x0001"/>
 		<item value="@integer/v0xd14e0x0002" img="@drawable/i0xd14e0x0002" name="@string/p0xd14e0x0002"/>
@@ -320,20 +516,24 @@
 		<item value="@integer/v0xd14e0x0004" img="@drawable/i0xd14e0x0004" name="@string/p0xd14e0x0004"/>
 		<item value="@integer/v0xd14e0x0005" img="@drawable/i0xd14e0x0005" name="@string/p0xd14e0x0005"/>
 	</ptpproperty>
-	<ptpproperty id="d161">
+	<ptpproperty id="d156" title="@string/p0xd156" islist="1">
+		<item value="@integer/v0xd1560x0000" name="@string/p0xd1560x0000"/>
+		<item value="@integer/v0xd1560x0001" name="@string/p0xd1560x0001"/>
+	</ptpproperty>
+	<ptpproperty id="d161" title="@string/p0xd161">
 		<item value="@integer/v0xd1610x0000" img="@drawable/i0xd1610x0000" name="@string/p0xd1610x0000"/>
 		<item value="@integer/v0xd1610x0001" img="@drawable/i0xd1610x0001" name="@string/p0xd1610x0001"/>
 		<item value="@integer/v0xd1610x0002" img="@drawable/i0xd1610x0002" name="@string/p0xd1610x0002"/>
 		<item value="@integer/v0xd1610x0003" img="@drawable/i0xd1610x0003" name="@string/p0xd1610x0003"/>
 		<item value="@integer/v0xd1610x0004" img="@drawable/i0xd1610x0004" name="@string/p0xd1610x0004"/>
 	</ptpproperty>
-	<ptpproperty id="d167">
+	<ptpproperty id="d167" title="@string/p0xd167">
 		<item value="@integer/v0xd1670x0000" img="@drawable/i0xd1670x0000" name="@string/p0xd1670x0000"/>
 		<item value="@integer/v0xd1670x0001" img="@drawable/i0xd1670x0001" name="@string/p0xd1670x0001"/>
 		<item value="@integer/v0xd1670x0002" img="@drawable/i0xd1670x0002" name="@string/p0xd1670x0002"/>
 		<item value="@integer/v0xd1670x0003" img="@drawable/i0xd1670x0003" name="@string/p0xd1670x0003"/>
 	</ptpproperty>
-	<ptpproperty id="d16d" deviceId="04b00423">
+	<ptpproperty id="d16d" deviceId="04b00423" title="@string/p0xd16d">
 		<item value="@integer/v0xd16d0x0000" name="@string/p0xd16d0x0000"/>
 		<item value="@integer/v0xd16d0x0001" name="@string/p0xd16d0x0003"/>
 		<item value="@integer/v0xd16d0x0002" name="@string/p0xd16d0x0006"/>
@@ -341,7 +541,7 @@
 		<item value="@integer/v0xd16d0x0004" name="@string/p0xd16d0x000c"/>
 		<item value="@integer/v0xd16d0x0005" name="@string/p0xd16d0x000f"/>
 	</ptpproperty>
-	<ptpproperty id="d16d" deviceId="04b00429">
+	<ptpproperty id="d16d" deviceId="04b00429" title="@string/p0xd16d">
 		<item value="@integer/v0xd16d0x0000" name="@string/p0xd16d0x0000"/>
 		<item value="@integer/v0xd16d0x0001" name="@string/p0xd16d0x0003"/>
 		<item value="@integer/v0xd16d0x0002" name="@string/p0xd16d0x0006"/>
@@ -349,7 +549,7 @@
 		<item value="@integer/v0xd16d0x0004" name="@string/p0xd16d0x000c"/>
 		<item value="@integer/v0xd16d0x0005" name="@string/p0xd16d0x000f"/>
 	</ptpproperty>
-	<ptpproperty id="d16d" deviceId="04b00412">
+	<ptpproperty id="d16d" deviceId="04b00412" title="@string/p0xd16d">
 		<item value="@integer/v0xd16d0x0000" name="@string/p0xd16d0x0000"/>
 		<item value="@integer/v0xd16d0x0001" name="@string/p0xd16d0x0003"/>
 		<item value="@integer/v0xd16d0x0002" name="@string/p0xd16d0x0006"/>
@@ -359,7 +559,7 @@
 		<item value="@integer/v0xd16d0x0006" name="@string/p0xd16d0x0012"/>
 		<item value="@integer/v0xd16d0x0007" name="@string/p0xd16d0x0015"/>
 	</ptpproperty>
-	<ptpproperty id="d16d">
+	<ptpproperty id="d16d" title="@string/p0xd16d">
 		<item value="@integer/v0xd16d0x0000" name="@string/p0xd16d0x0000"/>
 		<item value="@integer/v0xd16d0x0001" name="@string/p0xd16d0x0001"/>
 		<item value="@integer/v0xd16d0x0002" name="@string/p0xd16d0x0002"/>
@@ -383,11 +583,11 @@
 		<item value="@integer/v0xd16d0x0014" name="@string/p0xd16d0x0014"/>
 		<item value="@integer/v0xd16d0x0015" name="@string/p0xd16d0x0015"/>
 	</ptpproperty>
-    <ptpproperty id="d1a2">
+    <ptpproperty id="d1a2" title="@string/p0xd1a2">
 		<item value="@integer/v0xd1a20x0000" img="@drawable/i0xd1a20x0000" name="@string/p0xd1a20x0000"/>
 		<item value="@integer/v0xd1a20x0001" img="@drawable/i0xd1a20x0000" name="@string/p0xd1a20x0001"/>
 	</ptpproperty>
-	<ptpproperty id="d1d0">
+	<ptpproperty id="d1d0" title="@string/p0xd1d0">
 		<item value="@integer/v0xd1d00x0000" name="@string/p0xd1d00x0000"/>
 		<item value="@integer/v0xd1d00x0001" name="@string/p0xd1d00x0001"/>
 		<item value="@integer/v0xd1d00x0002" name="@string/p0xd1d00x0002"/>
@@ -395,7 +595,7 @@
 		<item value="@integer/v0xd1d00x0004" name="@string/p0xd1d00x0004"/>
 		<item value="@integer/v0xd1d00x0005" name="@string/p0xd1d00x0005"/>
 	</ptpproperty>
-	<ptpproperty id="d1d1">
+	<ptpproperty id="d1d1" title="@string/p0xd1d1">
 		<item value="@integer/v0xd1d10x0000" name="@string/p0xd1d10x0000"/>
 		<item value="@integer/v0xd1d10x0001" name="@string/p0xd1d10x0001"/>
 		<item value="@integer/v0xd1d10x0002" name="@string/p0xd1d10x0002"/>
@@ -411,7 +611,7 @@
 		<item value="@integer/v0xd1d10x000c" name="@string/p0xd1d10x000c"/>
 		<item value="@integer/v0xd1d10x000d" name="@string/p0xd1d10x000d"/>
 	</ptpproperty>	
-	<ptpproperty id="d1d2">
+	<ptpproperty id="d1d2" title="@string/p0xd1d2">
 		<item value="@integer/v0xd1d20x0000" name="@string/p0xd1d20x0000"/>
 		<item value="@integer/v0xd1d20x0001" name="@string/p0xd1d20x0001"/>
 		<item value="@integer/v0xd1d20x0002" name="@string/p0xd1d20x0002"/>
@@ -427,18 +627,18 @@
 		<item value="@integer/v0xd1d20x000c" name="@string/p0xd1d20x000c"/>
 		<item value="@integer/v0xd1d20x000d" name="@string/p0xd1d20x000d"/>
 	</ptpproperty>	
-	<ptpproperty id="d1d3">
+	<ptpproperty id="d1d3" title="@string/p0xd1d3">
 		<item value="@integer/v0xd1d30x0000" name="@string/p0xd1d30x0000"/>
 		<item value="@integer/v0xd1d30x0001" name="@string/p0xd1d30x0001"/>
 		<item value="@integer/v0xd1d30x0002" name="@string/p0xd1d30x0002"/>
 		<item value="@integer/v0xd1d30x0003" name="@string/p0xd1d30x0003"/>
 	</ptpproperty>	
-	<ptpproperty id="d1d4">
+	<ptpproperty id="d1d4" title="@string/p0xd1d4">
 		<item value="@integer/v0xd1d40x0000" img="@drawable/i0xd1670x0000" name="@string/p0xd1d40x0000"/>
 		<item value="@integer/v0xd1d40x0001" img="@drawable/i0xd1670x0001" name="@string/p0xd1d40x0001"/>
 		<item value="@integer/v0xd1d40x0002" img="@drawable/i0xd1d70x0003" name="@string/p0xd1d40x0002"/>
 	</ptpproperty>
-	<ptpproperty id="d1d5">
+	<ptpproperty id="d1d5" title="@string/p0xd1d5">
 		<item value="@integer/v0xd1d50x0000" name="@string/p0xd1d50x0000"/>
 		<item value="@integer/v0xd1d50x0001" name="@string/p0xd1d50x0001"/>
 		<item value="@integer/v0xd1d50x0002" name="@string/p0xd1d50x0002"/>
@@ -459,7 +659,7 @@
 		<item value="@integer/v0xd1d50x0011" name="@string/p0xd1d50x0011"/>
 		<item value="@integer/v0xd1d50x0012" name="@string/p0xd1d50x0012"/>
 	</ptpproperty>
-	<ptpproperty id="d1d6"  deviceId="04b00412">
+	<ptpproperty id="d1d6"  deviceId="04b00412" title="@string/p0xd1d6">
 		<item value="@integer/v0xd1d60x0000" name="@string/p0xd1d60x0000"/>
 		<item value="@integer/v0xd1d60x0001" name="@string/p0xd1d60x0003"/>
 		<item value="@integer/v0xd1d60x0002" name="@string/p0xd1d60x0006"/>
@@ -469,7 +669,7 @@
 		<item value="@integer/v0xd1d60x0006" name="@string/p0xd1d60x0012"/>
 		<item value="@integer/v0xd1d60x0007" name="@string/p0xd1d60x0015"/>
 	</ptpproperty>
-	<ptpproperty id="d1d6">
+	<ptpproperty id="d1d6" title="@string/p0xd1d6">
 		<item value="@integer/v0xd1d60x0000" name="@string/p0xd1d60x0000"/>
 		<item value="@integer/v0xd1d60x0001" name="@string/p0xd1d60x0001"/>
 		<item value="@integer/v0xd1d60x0002" name="@string/p0xd1d60x0002"/>
@@ -493,13 +693,13 @@
 		<item value="@integer/v0xd1d60x0014" name="@string/p0xd1d60x0014"/>
 		<item value="@integer/v0xd1d60x0015" name="@string/p0xd1d60x0015"/>
 	</ptpproperty>
-	<ptpproperty id="d1d7">
+	<ptpproperty id="d1d7" title="@string/p0xd1d7">
 		<item value="@integer/v0xd1d70x0000" img="@drawable/i0xd1670x0000" name="@string/p0xd1d70x0000"/>
 		<item value="@integer/v0xd1d70x0001" img="@drawable/i0xd1d70x0001" name="@string/p0xd1d70x0001"/>
 		<item value="@integer/v0xd1d70x0002" img="@drawable/i0xd1670x0001" name="@string/p0xd1d70x0002"/>
 		<item value="@integer/v0xd1d70x0003" img="@drawable/i0xd1d70x0003" name="@string/p0xd1d70x0003"/>
 	</ptpproperty>
-	<ptpproperty id="d1d8">
+	<ptpproperty id="d1d8" title="@string/p0xd1d8">
 		<item value="@integer/v0xd1d80x0000" name="@string/p0xd1d80x0000"/>
 		<item value="@integer/v0xd1d80x0001" name="@string/p0xd1d80x0001"/>
 		<item value="@integer/v0xd1d80x0002" name="@string/p0xd1d80x0002"/>
@@ -520,7 +720,7 @@
 		<item value="@integer/v0xd1d80x0011" name="@string/p0xd1d80x0011"/>
 		<item value="@integer/v0xd1d80x0012" name="@string/p0xd1d80x0012"/>
 	</ptpproperty>
-	<ptpproperty id="d1d9"  deviceId="04b00412">
+	<ptpproperty id="d1d9"  deviceId="04b00412" title="@string/p0xd1d9">
 		<item value="@integer/v0xd1d90x0000" name="@string/p0xd1d90x0000"/>
 		<item value="@integer/v0xd1d90x0001" name="@string/p0xd1d90x0003"/>
 		<item value="@integer/v0xd1d90x0002" name="@string/p0xd1d90x0006"/>
@@ -530,7 +730,7 @@
 		<item value="@integer/v0xd1d90x0006" name="@string/p0xd1d90x0012"/>
 		<item value="@integer/v0xd1d90x0007" name="@string/p0xd1d90x0015"/>
 	</ptpproperty>
-	<ptpproperty id="d1d9">
+	<ptpproperty id="d1d9" title="@string/p0xd1d9">
 		<item value="@integer/v0xd1d90x0000" name="@string/p0xd1d90x0000"/>
 		<item value="@integer/v0xd1d90x0001" name="@string/p0xd1d90x0001"/>
 		<item value="@integer/v0xd1d90x0002" name="@string/p0xd1d90x0002"/>
@@ -554,13 +754,13 @@
 		<item value="@integer/v0xd1d90x0014" name="@string/p0xd1d90x0014"/>
 		<item value="@integer/v0xd1d90x0015" name="@string/p0xd1d90x0015"/>
 	</ptpproperty>
-	<ptpproperty id="d1da">
+	<ptpproperty id="d1da" title="@string/p0xd1da">
 		<item value="@integer/v0xd1da0x0000" img="@drawable/i0xd1670x0000" name="@string/p0xd1da0x0000"/>
 		<item value="@integer/v0xd1da0x0001" img="@drawable/i0xd1d70x0001" name="@string/p0xd1da0x0001"/>
 		<item value="@integer/v0xd1da0x0002" img="@drawable/i0xd1670x0001" name="@string/p0xd1da0x0002"/>
 		<item value="@integer/v0xd1da0x0003" img="@drawable/i0xd1d70x0003" name="@string/p0xd1da0x0003"/>
 	</ptpproperty>
-	<ptpproperty id="d1db">
+	<ptpproperty id="d1db" title="@string/p0xd1db">
 		<item value="@integer/v0xd1db0x0000" name="@string/p0xd1db0x0000"/>
 		<item value="@integer/v0xd1db0x0001" name="@string/p0xd1db0x0001"/>
 		<item value="@integer/v0xd1db0x0002" name="@string/p0xd1db0x0002"/>
@@ -581,7 +781,7 @@
 		<item value="@integer/v0xd1db0x0011" name="@string/p0xd1db0x0011"/>
 		<item value="@integer/v0xd1db0x0012" name="@string/p0xd1db0x0012"/>
 	</ptpproperty>
-	<ptpproperty id="d1dc"  deviceId="04b00412">
+	<ptpproperty id="d1dc"  deviceId="04b00412" title="@string/p0xd1dc">
 		<item value="@integer/v0xd1dc0x0000" name="@string/p0xd1dc0x0000"/>
 		<item value="@integer/v0xd1dc0x0001" name="@string/p0xd1dc0x0003"/>
 		<item value="@integer/v0xd1dc0x0002" name="@string/p0xd1dc0x0006"/>
@@ -591,7 +791,7 @@
 		<item value="@integer/v0xd1dc0x0006" name="@string/p0xd1dc0x0012"/>
 		<item value="@integer/v0xd1dc0x0007" name="@string/p0xd1dc0x0015"/>
 	</ptpproperty>
-	<ptpproperty id="d1dc">
+	<ptpproperty id="d1dc" title="@string/p0xd1dc">
 		<item value="@integer/v0xd1dc0x0000" name="@string/p0xd1dc0x0000"/>
 		<item value="@integer/v0xd1dc0x0001" name="@string/p0xd1dc0x0001"/>
 		<item value="@integer/v0xd1dc0x0002" name="@string/p0xd1dc0x0002"/>
@@ -615,7 +815,7 @@
 		<item value="@integer/v0xd1dc0x0014" name="@string/p0xd1dc0x0014"/>
 		<item value="@integer/v0xd1dc0x0015" name="@string/p0xd1dc0x0015"/>
 	</ptpproperty>
-	<ptpproperty id="d200">
+	<ptpproperty id="d200" title="@string/p0xd200">
 		<item value="@integer/v0xd2000x0001" img="@drawable/i0xd2000x0001" name="@string/p0xd2000x0001"/>
 		<item value="@integer/v0xd2000x0002" img="@drawable/i0xd2000x0002" name="@string/p0xd2000x0002"/>
 		<item value="@integer/v0xd2000x0003" img="@drawable/i0xd2000x0003" name="@string/p0xd2000x0003"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0x5013">Still Capture Mode</string>
     <string name="p0x50130x0001">Single-frame</string>
     <string name="p0x50130x0002">Continuous</string>
     <string name="p0x50130x8010">Continuous (Low speed)</string>

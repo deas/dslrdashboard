@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0x500b">Exposure Metering Mode</string>
     <string name="p0x500b0x0002">Center-weighted metering</string>
     <string name="p0x500b0x0003">Multi-pattern metering</string>
     <string name="p0x500b0x0004">Spot metering</string>

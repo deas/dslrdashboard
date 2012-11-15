@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0x500c">Flash Mode</string>
     <string name="p0x500c0x0002">Flash prohibited</string>
     <string name="p0x500c0x0004">Red-eye reduction</string>
     <string name="p0x500c0x8010">Front curtain sync</string>

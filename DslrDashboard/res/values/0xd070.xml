@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd070">Noise Reduction High ISO</string>
+    <string name="p0xd0700x0000">Not performed</string>
+    <string name="p0xd0700x0001">Low</string>
+    <string name="p0xd0700x0002">Normal</string>
+    <string name="p0xd0700x0003">High</string>
+    <item type="integer" name="v0xd0700x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0700x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd0700x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd0700x0003" format="integer">0x0003</item>
+</resources>

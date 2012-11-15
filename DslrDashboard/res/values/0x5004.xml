@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0x5004">Compression setting</string>
 	<string name="p0x50040x0000">JPEG (Basic)</string>
 	<string name="p0x50040x0001">JPEG (Normal)</string>
 	<string name="p0x50040x0002">JPEG (Fine)</string>

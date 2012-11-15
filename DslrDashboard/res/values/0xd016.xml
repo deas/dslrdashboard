@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd016">RAW Compression Type</string>
+    <string name="p0xd0160x0000">Lossless compressed RAW</string>
+    <string name="p0xd0160x0001">Compressed RAW</string>
+    <string name="p0xd0160x0002">Uncompressed RAW</string>
+    <item type="integer" name="v0xd0160x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0160x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd0160x0002" format="integer">0x0002</item>
+</resources>

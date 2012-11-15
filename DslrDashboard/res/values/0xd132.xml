@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd132">HDR Smoothing</string>
+    <string name="p0xd1320x0000">High</string>
+    <string name="p0xd1320x0001">Normal</string>
+    <string name="p0xd1320x0002">Low</string>
+	<item type="integer" name="v0xd1320x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1320x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd1320x0002" format="integer">0x0002</item>
+</resources>

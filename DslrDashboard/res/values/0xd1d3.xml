@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd1d3">Flash Commander Channel</string>
     <string name="p0xd1d30x0000">1 CH</string>
     <string name="p0xd1d30x0001">2 CH</string>
     <string name="p0xd1d30x0002">3 CH</string>

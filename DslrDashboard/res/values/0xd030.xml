@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd030">Capture Area Crop</string>
+    <string name="p0xd0300x0000">FX format (36x24)</string>
+    <string name="p0xd0300x0001">DX format (24x16)</string>
+    <string name="p0xd0300x0002">5:4 (30x24)</string>
+    <string name="p0xd0300x0003">1.2x (30x20)</string>
+	<item type="integer" name="v0xd0300x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0300x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd0300x0002" format="integer">0x0002</item>
+	<item type="integer" name="v0xd0300x0003" format="integer">0x0003</item>
+</resources>

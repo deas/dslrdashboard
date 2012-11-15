@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="p0xd0c00x0000">Bracketing not performed</string>
-    <string name="p0xd0c00x0001">Bracketing performed</string>
+    <string name="p0xd0c0">Bracketing</string>
+    <string name="p0xd0c00x0000">Not performed</string>
+    <string name="p0xd0c00x0001">Performed</string>
 	<item type="integer" name="v0xd0c00x0000" format="integer">0x0000</item>
 	<item type="integer" name="v0xd0c00x0001" format="integer">0x0001</item>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd1d1">Internal Flash RPT Count</string>
     <string name="p0xd1d10x0000">2</string>
     <string name="p0xd1d10x0001">3</string>
     <string name="p0xd1d10x0002">4</string>

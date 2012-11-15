@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd031">Jpeg Compression Policy</string>
+    <string name="p0xd0310x0000">Size priority</string>
+    <string name="p0xd0310x0001">Image quality priority</string>
+	<item type="integer" name="v0xd0310x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0310x0001" format="integer">0x0001</item>
+</resources>

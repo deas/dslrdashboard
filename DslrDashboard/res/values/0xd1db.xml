@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd1db">Flash Commander Group B Comp</string>
     <string name="p0xd1db0x0000">-3.0</string>
     <string name="p0xd1db0x0001">-2.7</string>
     <string name="p0xd1db0x0002">-2.3</string>

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="p0x500f0x0032">Lo 1</string>
-    <string name="p0x500f0x0040">Lo 0.7</string>
-    <string name="p0x500f0x0048">Lo 0.5</string>
-    <string name="p0x500f0x0050">Lo 0.3</string>
-    <string name="p0x500f0x0064">100 Lo 1</string>
-    <string name="p0x500f0x007d">125 Lo 0.7</string>
-    <string name="p0x500f0x008c">140 Lo 0.5</string>
-    <string name="p0x500f0x00a0">160 Lo 0.3</string>
+    <string name="p0x500f">ISO (Exposure Index)</string>
+    <string name="p0x500f0x0032">50</string>
+    <string name="p0x500f0x0040">64</string>
+    <string name="p0x500f0x0048">72</string>
+    <string name="p0x500f0x0050">80</string>
+    <string name="p0x500f0x0064">100</string>
+    <string name="p0x500f0x007d">125</string>
+    <string name="p0x500f0x008c">140</string>
+    <string name="p0x500f0x00a0">160</string>
     <string name="p0x500f0x00c8">200</string>
     <string name="p0x500f0x00fa">250</string>
     <string name="p0x500f0x0118">280</string>
@@ -25,16 +26,20 @@
     <string name="p0x500f0x0898">2200</string>
     <string name="p0x500f0x09c4">2500</string>
     <string name="p0x500f0x0c80">3200</string>
-    <string name="p0x500f0x0fa0">4000 Hi 0.3</string>
-    <string name="p0x500f0x1194">4500 Hi 0.5</string>
-    <string name="p0x500f0x1388">5000 Hi 0.7</string>
-    <string name="p0x500f0x1900">6400 Hi 1</string>
-    <string name="p0x500f0x1f40">Hi 0.3</string>
-    <string name="p0x500f0x2328">Hi 0.5</string>
-    <string name="p0x500f0x2710">Hi 0.7</string>
-    <string name="p0x500f0x3200">Hi 1</string>
-    <string name="p0x500f0x6400">Hi 2</string>
-	<item type="integer" name="v0x500f0x0032" format="integer">0x0032</item>
+    <string name="p0x500f0x0fa0">4000</string>
+    <string name="p0x500f0x1194">4500</string>
+    <string name="p0x500f0x1388">5000</string>
+    <string name="p0x500f0x1900">6400</string>
+    <string name="p0x500f0x1f40">8000</string>
+    <string name="p0x500f0x2328">9000</string>
+    <string name="p0x500f0x2710">10000</string>
+    <string name="p0x500f0x3200">12800</string>
+    <string name="p0x500f0x3840">14400</string>
+    <string name="p0x500f0x4650">18000</string>
+    <string name="p0x500f0x4e20">20000</string>
+    <string name="p0x500f0x6400">25600</string>
+    <string name="p0x500f0xc800">51200</string>
+    <item type="integer" name="v0x500f0x0032" format="integer">0x0032</item>
 	<item type="integer" name="v0x500f0x0040" format="integer">0x0040</item>
 	<item type="integer" name="v0x500f0x0048" format="integer">0x0048</item>
 	<item type="integer" name="v0x500f0x0050" format="integer">0x0050</item>
@@ -67,5 +72,9 @@
 	<item type="integer" name="v0x500f0x2328" format="integer">0x2328</item>
 	<item type="integer" name="v0x500f0x2710" format="integer">0x2710</item>
 	<item type="integer" name="v0x500f0x3200" format="integer">0x3200</item>
+	<item type="integer" name="v0x500f0x3840" format="integer">0x3840</item>
+	<item type="integer" name="v0x500f0x4e20" format="integer">0x4e20</item>
+	<item type="integer" name="v0x500f0x4650" format="integer">0x4650</item>
 	<item type="integer" name="v0x500f0x6400" format="integer">0x6400</item>
+	<item type="integer" name="v0x500f0xc800" format="integer">0xc800</item>
 </resources>

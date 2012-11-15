@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd0a0">Movie Record Screen Size</string>
     <string name="p0xd0a00x0000_0423">320x216</string> <!-- D5000 -->
     <string name="p0xd0a00x0001_0423">640x424</string>
     <string name="p0xd0a00x0002_0423">1280x720</string>

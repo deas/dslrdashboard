@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0x5005">White Balance</string>
     <string name="p0x50050x0002">Auto</string>
     <string name="p0x50050x0004">Sunny</string>
     <string name="p0x50050x0005">Fluorescent</string>

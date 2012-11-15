@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd032">Color Space</string>
+    <string name="p0xd0320x0000">SRGB</string>
+    <string name="p0xd0320x0001">Adobe RGB</string>
+	<item type="integer" name="v0xd0320x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd0320x0001" format="integer">0x0001</item>
+</resources>

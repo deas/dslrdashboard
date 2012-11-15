@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p0xd130">HDR Mode</string>
+    <string name="p0xd1300x0000">Off</string>
+    <string name="p0xd1300x0001">On (single)</string>
+    <string name="p0xd1300x0002">On (sequence)</string>
+	<item type="integer" name="v0xd1300x0000" format="integer">0x0000</item>
+	<item type="integer" name="v0xd1300x0001" format="integer">0x0001</item>
+	<item type="integer" name="v0xd1300x0002" format="integer">0x0002</item>
+</resources>

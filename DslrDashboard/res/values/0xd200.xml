@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="p0xd200">Active Picture Control</string>
     <string name="p0xd2000x0001">Standard</string>
     <string name="p0xd2000x0002">Neutral</string>
     <string name="p0xd2000x0003">Vivid</string>

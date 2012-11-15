@@ -1,3 +1,22 @@
+/*
+	<DslrDashboard - controling DSLR camera with Android phone/tablet>
+    Copyright (C) <2012>  <Zoltan Hubai>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    
+ */
+
 package com.dslr.dashboard;
 
 import java.io.IOException;
@@ -64,6 +83,7 @@ public class DslrHelper {
 
 		mDslrProperties = new DslrProperties(vendorId, productId);
 		String deviceId = null;
+		int propertyTitle = 0;
 		String productName = String.format("%04X%04X", vendorId, productId)
 				.toLowerCase();
 		boolean addItems = true;
@@ -94,21 +114,38 @@ public class DslrHelper {
 
 					deviceId = devices.getAttributeValue(null, "deviceId");
 
-					if (deviceId != null
-							&& deviceId.toLowerCase().equals(productName)) {
+					addItems = false;
+					if (deviceId != null) {
+						if (deviceId.toLowerCase().equals(productName)) {
+							addItems = true;
+						}
+					} else {
+						addItems = true;
+					}
+					
+					if (addItems) {
 						dslrProperty = mDslrProperties
 								.addProperty(propertyCode);
-						addItems = true;
-					} else {
-						dslrProperty = mDslrProperties
-								.getProperty(propertyCode);
-						if (dslrProperty == null) {
-							dslrProperty = mDslrProperties
-									.addProperty(propertyCode);
-							addItems = true;
-						} else
-							addItems = false;
+						dslrProperty.setPropertyTitle( devices.getAttributeResourceValue(null, "title", 0));
+						
 					}
+					
+//					if (deviceId != null
+//							&& deviceId.toLowerCase().equals(productName)) {
+//						dslrProperty = mDslrProperties
+//								.addProperty(propertyCode);
+//						addItems = true;
+//					} else {
+//						dslrProperty = mDslrProperties
+//								.getProperty(propertyCode);
+//						if (dslrProperty == null) {
+//							dslrProperty = mDslrProperties
+//									.addProperty(propertyCode);
+//							addItems = true;
+//						} else
+//							addItems = false;
+//					}
+					
 
 				} else if (strName.equals("item")) {
 
@@ -133,7 +170,7 @@ public class DslrHelper {
 						dslrProperty.addPropertyValue(value, nameId, resId);
 					}
 
-				}
+				} 
 			}
 			try {
 				eventType = devices.next();
@@ -181,7 +218,7 @@ public class DslrHelper {
 		};
 		if (listener != null)
 			mListener = listener;
-
+		
 		CustomDialog.Builder customBuilder = new CustomDialog.Builder(context);
 		customBuilder.setTitle(dialogTitle).setListItems(items, selectedItem)
 				.setListOnClickListener(mListener);
@@ -272,7 +309,10 @@ public class DslrHelper {
 				items = dslrProperty.valueNames();
 			selectedItem = dslrProperty.indexOfValue(property.getValue());
 		}
-		createDialog(context, propertyCode, dialogTitle, items, selectedItem,
+		String title = dialogTitle;
+		if (dslrProperty.propertyTitle() != 0)
+			title = (String)context.getText(dslrProperty.propertyTitle());
+		createDialog(context, propertyCode, title, items, selectedItem,
 				listener);
 	}
 
