@@ -50,7 +50,6 @@
         </activity>
         <service android:name=".PtpService"></service>
         <service android:name=".UsbSerialService"></service>
-        <activity android:name=".ImageBrowseActivity" android:launchMode="standard" android:label="@string/app_name"></activity>     
         <activity android:name=".DslrImageBrowserActivity" android:launchMode="standard" android:label="@string/app_name"></activity>     
         <activity
             android:name=".ImagePreviewActivity"

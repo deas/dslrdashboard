@@ -21,6 +21,7 @@ package com.dslr.dashboard;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -34,12 +35,14 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.content.ComponentName;
 import android.content.Intent;
+import android.content.SharedPreferences.Editor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -62,10 +65,11 @@ public class DslrImageBrowserActivity extends ActivityBase {
 	private ImagePreviewActionProvider mMenuProvider;
 
 	private ImageGalleryAdapter mImageGalleryAdapter;
-	private ArrayList<ImageObjectHelper> mImagesFromDslr;
-	private File mSdramSavingLocation = new File(
-			Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM),"DSLR");
+	private ArrayList<ImageObjectHelper> mImagesArray;
+	private String mSdramSavingLocation = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM),"DSLR").getAbsolutePath();
 	private boolean mUseInternalViewer = true;
+	
+	private boolean mIsCameraGalleryEnabled = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +77,15 @@ public class DslrImageBrowserActivity extends ActivityBase {
 		Log.d(TAG, "onCreate");
 
 		
-		mSdramSavingLocation = new File(mPrefs.getString(PtpDevice.PREF_KEY_SDRAM_LOCATION, mSdramSavingLocation.getAbsolutePath()));
+        String tmp = mPrefs.getString(PtpDevice.PREF_KEY_SDRAM_LOCATION, "");
+        if (tmp.equals("")) {
+        	Editor editor = mPrefs.edit();
+        	editor.putString(PtpDevice.PREF_KEY_SDRAM_LOCATION, mSdramSavingLocation);
+        	editor.commit();
+        }
+        else
+        	mSdramSavingLocation = tmp;
+		
 		mUseInternalViewer = mPrefs.getBoolean(PtpDevice.PREF_KEY_GENERAL_INTERNAL_VIEWER, true);
 		
 		setContentView(R.layout.activity_dslr_image_browse);
@@ -89,16 +101,26 @@ public class DslrImageBrowserActivity extends ActivityBase {
 					downloadSelectedImages();
 					break;
 				case SelectAll:
-					for (ImageObjectHelper obj : mImagesFromDslr) {
+					for (ImageObjectHelper obj : mImagesArray) {
 						obj.isChecked = true;
 					}
 					mImageGalleryAdapter.notifyDataSetChanged();
 					break;
 				case Delete:
-					deleteSelectedImages();
+					if (mIsCameraGalleryEnabled)
+						deleteSelectedImages();
+					else {
+						deleteSelectedPhoneImages();
+					}
 					break;
 				case LoadInfos:
 					getObjectInfosFromCamera();
+					break;
+				case PhoneImages:
+					switchToPhoneGallery();
+					break;
+				case CameraImages:
+					switchToCameraGallery();
 					break;
 				}
 			}
@@ -110,31 +132,12 @@ public class DslrImageBrowserActivity extends ActivityBase {
 		mDownloadProgress = (ProgressBar)findViewById(R.id.downloadprogress);
 		mDownloadProgressLayout = (LinearLayout)findViewById(R.id.downloadprogresslayout);
 		
-		mImagesFromDslr = new ArrayList<ImageObjectHelper>();
-		mImageGalleryAdapter = new ImageGalleryAdapter(this, mImagesFromDslr);
+		mImagesArray = new ArrayList<ImageObjectHelper>();
+		mImageGalleryAdapter = new ImageGalleryAdapter(this, mImagesArray);
 
 		mImageGallery = (GridView) findViewById(R.id.img_gallery);
 		mImageGallery.setAdapter(mImageGalleryAdapter);
 
-//		mImageGalleryAdapter
-//				.setOnSelectionChanged(new ImageGalleryAdapter.SelectionChangedListener() {
-//
-//					public void onSelectionChanged(
-//							ArrayList<ImageObjectHelper> selectedItems) {
-//					}
-//				});
-//		mImageGalleryAdapter
-//				.setOnImageItemClicked(new ImageGalleryAdapter.ImageItemClickedListener() {
-//
-//					public void onImageItemClicked(ImageObjectHelper obj) {
-//						if (mMenuProvider.getIsSelectionModeEnabled()) {
-//							obj.isChecked = !obj.isChecked;
-//							mImageGalleryAdapter.notifyDataSetChanged();
-//						}
-//						else
-//							displayDslrImage(obj);
-//					}
-//				});
         mImageGallery.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         	
         	public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
@@ -145,8 +148,9 @@ public class DslrImageBrowserActivity extends ActivityBase {
         				helper.isChecked = !helper.isChecked;
         				mImageGalleryAdapter.notifyDataSetChanged();
         			}
-        			else
-    					displayDslrImage(helper);
+        			else {
+    					displayImage(helper);
+        			}
         		}
         	}
 
@@ -164,6 +168,24 @@ public class DslrImageBrowserActivity extends ActivityBase {
 		});
     }
 
+	private void switchToPhoneGallery() {
+		if (mIsCameraGalleryEnabled) {
+			mIsCameraGalleryEnabled = false;
+			mMenuProvider.setIsCameraGalleryEnabled(mIsCameraGalleryEnabled);
+			loadImagesFromPhone();
+		}
+	}
+	private void switchToCameraGallery() {
+		if (!mIsCameraGalleryEnabled) {
+			if (DslrHelper.getInstance().getPtpDevice() != null) {
+				if (DslrHelper.getInstance().getPtpDevice().getIsPtpDeviceInitialized()) {
+					mIsCameraGalleryEnabled = true;
+					mMenuProvider.setIsCameraGalleryEnabled(mIsCameraGalleryEnabled);
+					initDisplay();
+				}
+			}
+		}
+	}
 	private void hideProgressBar() {
 		runOnUiThread(new Runnable() {
 			
@@ -220,7 +242,7 @@ public class DslrImageBrowserActivity extends ActivityBase {
     	new Thread(new Runnable() {
 			
 			public void run() {
-				for (final ImageObjectHelper obj : mImagesFromDslr) {
+				for (final ImageObjectHelper obj : mImagesArray) {
 					if (obj.isChecked) {
 						setProgressFileName(obj.objectInfo.filename, obj.objectInfo.objectCompressedSize);
 						
@@ -231,6 +253,7 @@ public class DslrImageBrowserActivity extends ActivityBase {
 								updateProgress(obj);
 							}
 						});
+						createThumb(obj);
 						obj.isChecked = false;
 					}
 				}
@@ -259,6 +282,13 @@ public class DslrImageBrowserActivity extends ActivityBase {
 			}
 		}).start();
 	}
+	private void displayImage(ImageObjectHelper obj) {
+		if (mIsCameraGalleryEnabled)
+			displayDslrImage(obj);
+		else
+			displayDownloadedImage(obj);
+	}
+	
 	private void displayDownloadedImage(ImageObjectHelper obj) {
 		runOnUiThread(new Runnable() {
 			
@@ -299,6 +329,7 @@ public class DslrImageBrowserActivity extends ActivityBase {
 							}
 						});
 						hideProgressBar();
+						createThumb(obj);
 						displayDownloadedImage(obj);
 					}
 				}).start();
@@ -344,14 +375,14 @@ public class DslrImageBrowserActivity extends ActivityBase {
 
 	
 	private void loadObjectInfosFromCamera() {
-		mImagesFromDslr.clear();
+		mImagesArray.clear();
 		for (PtpStorageInfo store : mDslrHelper.getPtpDevice().getPtpStorages().values()) {
 
 			for (PtpObjectInfo obj : store.objects.values()) {
 				addObjectFromCamera(obj, false);
 			}
 		}
-		Collections.sort(mImagesFromDslr, new ImageObjectHelperComparator());
+		Collections.sort(mImagesArray, new ImageObjectHelperComparator());
 		mImageGalleryAdapter.notifyDataSetChanged();
 	}
 
@@ -386,7 +417,7 @@ public class DslrImageBrowserActivity extends ActivityBase {
 				imgObj.galleryItemType = ImageObjectHelper.DSLR_PICTURE;
 				imgObj.file = new File(mSdramSavingLocation + "/.dslrthumbs/"
 						+ obj.filename + ".jpg");
-				mImagesFromDslr.add(imgObj);
+				mImagesArray.add(imgObj);
 				if (notifyDataSet)
 					mImageGalleryAdapter.notifyDataSetChanged();
 				break;
@@ -434,8 +465,14 @@ public class DslrImageBrowserActivity extends ActivityBase {
 	@Override
 	protected void onResume() {
 		Log.d(TAG, "onResume");
-		if (mDslrHelper.getIsInitialized()) {
+		if (mIsCameraGalleryEnabled) {
+			// we are in camera gallery mode
+			if (mDslrHelper.getIsInitialized()) {
 				initDisplay();
+			}
+		}
+		else {
+			loadImagesFromPhone();
 		}
 		super.onResume();
 	}
@@ -483,12 +520,157 @@ public class DslrImageBrowserActivity extends ActivityBase {
 		
 	}
 
+	
+	private void loadImagesFromPhone(){
+		Log.d(TAG, "LoadImagesFromPhone");
+		mImagesArray.clear();
+		File f = new File(mSdramSavingLocation);
+		if (f.exists()){
+		File[] phoneFiles = f.listFiles();
+		for(int i = 0; i < phoneFiles.length; i++){
+			if (phoneFiles[i].isFile()){
+				final ImageObjectHelper helper = new ImageObjectHelper();
+				helper.file = phoneFiles[i];
+				helper.galleryItemType = ImageObjectHelper.PHONE_PICTURE;
+
+				createThumb(helper);
+				
+				mImagesArray.add(helper);
+			}
+		}
+		}
+		Log.d(TAG, "Images from phone - NotifyDataSetChanged");
+		mImageGalleryAdapter.notifyDataSetChanged();
+	}
+	
+	private void createThumb(ImageObjectHelper helper) {
+		if (!tryLoadThumb(helper))
+		{
+			String fExt = helper.getFileExt(helper.file.toString());
+			if (fExt.equals("jpg") || fExt.equals("png")) {
+				Bitmap thumb = null;
+				final int IMAGE_MAX_SIZE = 30000; // 1.2MP
+				
+				BitmapFactory.Options options = new BitmapFactory.Options();
+				options.inJustDecodeBounds = true;
+				thumb = BitmapFactory.decodeFile(helper.file.getAbsolutePath(), options);
+
+		        int scale = 1;
+		        while ((options.outWidth * options.outHeight) * (1 / Math.pow(scale, 2)) > IMAGE_MAX_SIZE) {
+		            scale++;
+		        }
+		        Log.d(TAG, "scale = " + scale + ", orig-width: " + options.outWidth       + ", orig-height: " + options.outHeight);
+
+		        if (scale > 1) {
+		            scale--;
+			        options = new BitmapFactory.Options();
+			        options.inSampleSize = scale;
+			        thumb = BitmapFactory.decodeFile(helper.file.getAbsolutePath(), options);
+		        }
+		        else
+		        	thumb = BitmapFactory.decodeFile(helper.file.getAbsolutePath());
+		        if (thumb != null) {
+					FileOutputStream fOut;
+					try {
+						fOut = new FileOutputStream(helper.getThumbFilePath("jpg"));
+						thumb.compress(Bitmap.CompressFormat.JPEG, 85, fOut);
+						fOut.flush();
+						fOut.close();
+						thumb.recycle();
+					} catch (Exception e) {
+					}				        	
+		        }
+			}
+			else {
+				// try jni to create a thumb
+				String proba = helper.getThumbFilePath("").getAbsolutePath();
+				if (NativeMethods.getInstance().loadRawImageThumb(helper.file.getAbsolutePath(), proba ))
+				{
+					
+				}
+			}
+		}
+		
+	}
+	private boolean tryLoadThumb(ImageObjectHelper helper){
+		boolean rezultat = helper.tryLoadThumb("png");
+		if (!rezultat){
+			rezultat = helper.tryLoadThumb("jpg");
+			if (!rezultat)
+				rezultat = helper.tryLoadThumb("ppm");
+		}
+			
+		return rezultat;
+	}     
+
+    private void deleteSelectedPhoneImages() {
+    	mProgressText.setText("Deleting selected images");
+    	mProgressLayout.setVisibility(View.VISIBLE);
+		for(int i = mImageGalleryAdapter.getCount()-1; i >= 0; i--){
+			ImageObjectHelper item = mImageGalleryAdapter.items().get(i);
+			if (item.isChecked) {
+				item.deleteImage();
+				mImageGalleryAdapter.items().remove(i);
+			}
+		}
+    	mProgressLayout.setVisibility(View.GONE);
+		mImageGalleryAdapter.notifyDataSetChanged();     	
+    }
+
 	@Override
 	protected void processArduinoButtons(
 			EnumSet<ArduinoButtonEnum> pressedButtons,
 			EnumSet<ArduinoButtonEnum> releasedButtons) {
-		// TODO Auto-generated method stub
+
+		for (ArduinoButtonEnum button : releasedButtons) {
+			switch (button) {
+			case Button0:
+				break;
+			case Button4:
+				generateKeyEvent(new KeyEvent(button.getLongPressStart(), button.getLongPressEnd(), KeyEvent.ACTION_UP, KeyEvent.KEYCODE_BACK,0));
+				break;
+			case Button5:
+				generateKeyEvent(new KeyEvent(button.getLongPressStart(), button.getLongPressEnd(), KeyEvent.ACTION_UP, KeyEvent.KEYCODE_ENTER,0));
+				break;
+			case Button6:
+				generateKeyEvent(new KeyEvent(button.getLongPressStart(), button.getLongPressEnd(), KeyEvent.ACTION_UP, KeyEvent.KEYCODE_DPAD_LEFT,0));
+				break;
+			case Button7:
+				generateKeyEvent(new KeyEvent(button.getLongPressStart(), button.getLongPressEnd(), KeyEvent.ACTION_UP, KeyEvent.KEYCODE_DPAD_RIGHT,0));
+				break;
+			case Button8:
+				generateKeyEvent(new KeyEvent(button.getLongPressStart(), button.getLongPressEnd(), KeyEvent.ACTION_UP, KeyEvent.KEYCODE_DPAD_UP,0));
+				break;
+			case Button9:
+				generateKeyEvent(new KeyEvent(button.getLongPressStart(), button.getLongPressEnd(), KeyEvent.ACTION_UP, KeyEvent.KEYCODE_DPAD_DOWN,0));
+				break;
+			}
+			Log.d(TAG, "Released button: " + button.toString() + " is long press: " + button.getIsLongPress());
+		}
+		for (ArduinoButtonEnum button : pressedButtons) {
+			switch(button){
+			case Button4:
+				generateKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_BACK));
+				break;
+			case Button5:
+				generateKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
+				break;
+			case Button6:
+				generateKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DPAD_LEFT));
+				break;
+			case Button7:
+				generateKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DPAD_RIGHT));
+				break;
+			case Button8:
+				generateKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DPAD_UP));
+				break;
+			case Button9:
+				generateKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DPAD_DOWN));
+				break;
+			}
+			Log.d(TAG, "Pressed button: " + button.toString());
+		}
 		
 	}
-
+    
 }

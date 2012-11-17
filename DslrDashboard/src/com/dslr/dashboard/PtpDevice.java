@@ -66,7 +66,11 @@ public class PtpDevice {
 	public final static String PREF_KEY_FOCUS_STEPS = "pref_key_focus_steps";
 	public final static String PREF_KEY_FOCUS_DIRECTION_DOWN = "pref_key_focus_direction_down";
 	public final static String PREF_KEY_FOCUS_FOCUS_FIRST = "pref_key_focus_focus_first";
-	
+
+	public final static String PREF_KEY_GPS_ENABLED = "pref_key_gps_enabled";
+	public final static String PREF_KEY_GPS_SAMPLES = "pref_key_gps_samples";
+	public final static String PREF_KEY_GPS_INTERVAL = "pref_key_gps_interval";
+			
 	public interface OnPtpDeviceEventListener {
 		public void sendEvent(PtpDeviceEvent event, Object data);
 	}
@@ -189,7 +193,11 @@ public class PtpDevice {
 	// time lapse preferences
 	private long mTimelapseInterval = 10000; // interval in seconds
 	private int mTimelapseIterations = 10;
-	
+
+	// gps location preferences
+	private boolean mGpsInfoEnabled = true;
+	private int mGpsSamples = 3;
+	private int mGpsInterval = 2;
 	
 	// preferences public
 	public boolean getLiveViewAtStart() {
@@ -357,6 +365,13 @@ public class PtpDevice {
 		mFocusStep = Integer.valueOf(mPrefs.getString(PREF_KEY_FOCUS_STEPS, "10"));
 		mFocusDirectionDown = mPrefs.getBoolean(PREF_KEY_FOCUS_DIRECTION_DOWN, true);
 		mFocusFocusFirst = mPrefs.getBoolean(PREF_KEY_FOCUS_FOCUS_FIRST, false);
+		
+		mGpsInfoEnabled = mPrefs.getBoolean(PREF_KEY_GPS_ENABLED, false);
+		mGpsSamples = Integer.valueOf(mPrefs.getString(PREF_KEY_GPS_SAMPLES, "3"));
+		mGpsInterval = Integer.valueOf(mPrefs.getString(PREF_KEY_GPS_INTERVAL, "2"));
+		
+		mPtpService.getGpsLocationHelper().setGpsSampleCount(mGpsSamples);
+		mPtpService.getGpsLocationHelper().setGpsSampleInterval(mGpsInterval);
 		
 		sendPtpDeviceEvent(PtpDeviceEvent.PrefsLoaded, null);
 
@@ -1642,11 +1657,17 @@ public class PtpDevice {
 						// addGpsLocation(helper.file);
 						// }
 						// else
-						runMediaScanner(helper.file);
+						if (mGpsInfoEnabled) {
+							GpsLocationHelper gpsHelper = mPtpService.getGpsLocationHelper();
+							gpsHelper.addGpsLocation(helper.file);
+						}
+						else {
+							runMediaScanner(helper.file);
 
 						sendPtpDeviceEvent(
 								PtpDeviceEvent.GetObjectFromSdramFinished,
 								helper);
+						}
 					}
 				}
 			}

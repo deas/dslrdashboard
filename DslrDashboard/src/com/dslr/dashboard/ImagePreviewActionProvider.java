@@ -28,6 +28,8 @@ import android.view.View;
 public class ImagePreviewActionProvider extends ActionProvider {
 
 	public enum ImageMenuButtonEnum	{
+		PhoneImages,
+		CameraImages,
 		Download,
 		SelectAll,
 		Delete,
@@ -44,12 +46,13 @@ public class ImagePreviewActionProvider extends ActionProvider {
 	}
 	
 	private Context mContext;
-	private CheckableImageView mLoadInfos, mDownload, mSelectAll, mDelete;
+	private CheckableImageView mLoadInfos, mDownload, mSelectAll, mDelete, mGalleryPhone, mGalleryCamera;
 	
 	private boolean mIsEnabled = true;
 	private boolean mDownloadVisible = false;
 	private boolean mDownloadImageEnabled = false;
 	private boolean mSelectionModeEnabled = false;
+	private boolean mCameraGalleryEnabled = false;
 	
 	public boolean getIsEnabled() {
 		return mIsEnabled;
@@ -77,6 +80,17 @@ public class ImagePreviewActionProvider extends ActionProvider {
 		mSelectionModeEnabled = value;
 		setSelectionMode();
 	}
+	public boolean getIsCameraGalleryEnabled() {
+		return mCameraGalleryEnabled;
+	}
+	public void setIsCameraGalleryEnabled(boolean value) {
+		mCameraGalleryEnabled = value;
+		mGalleryCamera.setChecked(mCameraGalleryEnabled);
+		mGalleryPhone.setChecked(!mCameraGalleryEnabled);
+		
+		mDownload.setVisibility(mCameraGalleryEnabled ? View.VISIBLE : View.GONE);
+		mLoadInfos.setVisibility(mCameraGalleryEnabled ? View.VISIBLE : View.GONE);
+	}
 	
 	public ImagePreviewActionProvider(Context context) {
 		super(context);
@@ -101,6 +115,10 @@ public class ImagePreviewActionProvider extends ActionProvider {
 		LayoutInflater layoutInflater = LayoutInflater.from(mContext);
         View view = layoutInflater.inflate(R.layout.image_preview_menu_provider,null);
         
+        mGalleryPhone = (CheckableImageView)view.findViewById(R.id.phone_images);
+        mGalleryCamera = (CheckableImageView)view.findViewById(R.id.camera_images);
+        
+        
         mLoadInfos = (CheckableImageView)view.findViewById(R.id.load_object_info);
         mDownload = (CheckableImageView)view.findViewById(R.id.download_img);
         setDownloadVisibility();
@@ -108,6 +126,7 @@ public class ImagePreviewActionProvider extends ActionProvider {
         setSelectionMode();
         mDelete = (CheckableImageView)view.findViewById(R.id.delete_selected);
         
+        setIsCameraGalleryEnabled(false);
         
         mDownload.setOnLongClickListener(new View.OnLongClickListener() {
 			
@@ -160,6 +179,24 @@ public class ImagePreviewActionProvider extends ActionProvider {
 				if (mIsEnabled) {
 					if (mImageMenuClickListener != null)
 						mImageMenuClickListener.onImageButtonClick(ImageMenuButtonEnum.LoadInfos);
+				}
+			}
+		});
+        mGalleryPhone.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				if (mIsEnabled) {
+					if (mImageMenuClickListener != null)
+						mImageMenuClickListener.onImageButtonClick(ImageMenuButtonEnum.PhoneImages);
+				}
+			}
+		});
+        mGalleryCamera.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				if (mIsEnabled) {
+					if (mImageMenuClickListener != null)
+						mImageMenuClickListener.onImageButtonClick(ImageMenuButtonEnum.CameraImages);
 				}
 			}
 		});

@@ -60,6 +60,27 @@
             android:defaultValue="1"
             android:numeric="integer" 
             />
-        
+        </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_gps_category"
+        android:key="pref_key_gps"
+        >
+        <CheckBoxPreference
+            android:key="pref_key_gps_enabled"
+            android:title="@string/pref_gps_enabled" 
+            android:defaultValue="false"
+            />
+        <EditTextPreference 
+            android:key="pref_key_gps_samples"
+            android:title="@string/pref_gps_samples"
+            android:defaultValue="3"
+            android:numeric="integer" 
+            />
+        <EditTextPreference 
+            android:key="pref_key_gps_interval"
+            android:title="@string/pref_gps_interval"
+            android:defaultValue="2"
+            android:numeric="integer" 
+            />
     </PreferenceCategory>
 </PreferenceScreen>

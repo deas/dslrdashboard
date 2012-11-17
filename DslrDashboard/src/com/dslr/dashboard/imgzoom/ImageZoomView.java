@@ -78,11 +78,12 @@ public class ImageZoomView extends View implements Observer {
     public void setImage(Bitmap bitmap) {
         mBitmap = bitmap;
 
-        mAspectQuotient.updateAspectQuotient(getWidth(), getHeight(), mBitmap.getWidth(), mBitmap
-                .getHeight());
-        mAspectQuotient.notifyObservers();
+        if (mBitmap != null) {
+        	mAspectQuotient.updateAspectQuotient(getWidth(), getHeight(), mBitmap.getWidth(), mBitmap.getHeight());
+        	mAspectQuotient.notifyObservers();
 
-        invalidate();
+        	invalidate();
+        }
     }
 
     /**

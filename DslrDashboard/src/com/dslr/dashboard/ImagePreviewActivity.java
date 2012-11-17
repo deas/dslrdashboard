@@ -95,7 +95,7 @@ public class ImagePreviewActivity extends ActivityBase {
 		if (savedInstanceState != null) {
 			String tmpPath = savedInstanceState.getString("tmpFile");
 			if (!tmpPath.isEmpty()) {
-				Log.i(TAG, "Restore from tmp file");
+				Log.i(TAG, "Restore from tmp file: " + tmpPath);
 				File f = new File(tmpPath);
 				mBitmap = BitmapFactory.decodeFile(f.getAbsolutePath());
 				Log.i(TAG, "Delete temp file");
@@ -263,6 +263,10 @@ public class ImagePreviewActivity extends ActivityBase {
 	protected void onResume() {
 		super.onResume();
 		Log.d(TAG, "onResume");
+		if (mBitmap != null) {
+			Log.d(TAG, "displaying image");
+			displayBitmap(mBitmap);
+		}
 	}
 	
 	@Override
@@ -314,9 +318,11 @@ public class ImagePreviewActivity extends ActivityBase {
 	
 	@Override
 	protected void onDestroy() {
-		Log.d(TAG, "onDestroy");
+		Log.d(TAG, "onDestroy - bitmap recycle");
+		mZoomView.setImage(null);
 		if (mBitmap != null)
 			mBitmap.recycle();
+		mBitmap = null;
 		super.onDestroy();
 	}
 	
@@ -432,11 +438,13 @@ public class ImagePreviewActivity extends ActivityBase {
 		runOnUiThread(new Runnable() {
 			
 			public void run() {
-				mProgressLayout.setVisibility(View.GONE);
-				//mTxtLoading.setVisibility(View.GONE);
-				mZoomView.setImage(bmp);
-				mZoomView.setVisibility(View.VISIBLE);
-		        resetZoomState();
+				if (bmp != null) {
+					Log.d(TAG, "displayBitmap");
+					mProgressLayout.setVisibility(View.GONE);
+					mZoomView.setImage(bmp);
+					mZoomView.setVisibility(View.VISIBLE);
+					resetZoomState();
+				}
 			}
 		});
 	}
@@ -450,6 +458,7 @@ public class ImagePreviewActivity extends ActivityBase {
 			
 			public void run() {
 				
+				try {
 				if (path != null && !path.isEmpty()) {
 					File f = new File(path);
 					if (f.exists()) {
@@ -463,6 +472,9 @@ public class ImagePreviewActivity extends ActivityBase {
 							
 						}
 					}
+				} 
+				} catch (Exception e) {
+					Log.e(TAG, "Exeption: " + e.getMessage());
 				}
 				if (mBitmap != null) {
 					displayBitmap(mBitmap);

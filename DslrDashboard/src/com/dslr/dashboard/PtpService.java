@@ -71,6 +71,7 @@ public class PtpService extends ServiceBase {
 	private boolean mIsUsbInterfaceClaimed = false;
 	
 	private PtpDevice mPtpDevice = null;
+	private GpsLocationHelper mGpsHelper = null;
 	
 	// preferences
 	private SharedPreferences mPrefs = null;
@@ -84,6 +85,9 @@ public class PtpService extends ServiceBase {
 	}
 	public PtpDevice getPtpDevice() {
 		return mPtpDevice;
+	}
+	public GpsLocationHelper getGpsLocationHelper() {
+		return mGpsHelper;
 	}
 	
 	@Override
@@ -182,6 +186,7 @@ public class PtpService extends ServiceBase {
 		Log.d(TAG, "onCreate");
 		super.onCreate();
 
+		mGpsHelper = new GpsLocationHelper(this);
 		
         IntentFilter usbDetachedFilter = new IntentFilter(UsbManager.ACTION_USB_DEVICE_DETACHED);
         registerReceiver(mUsbDeviceDetached, usbDetachedFilter);
@@ -221,6 +226,11 @@ public class PtpService extends ServiceBase {
 	public void onDestroy() {
 		Log.d(TAG, "onDestroy");
 
+		if (mGpsHelper != null) {
+			mGpsHelper.stopGpsLocator();
+			mGpsHelper = null;
+		}
+		
     	unregisterReceiver(mUsbDeviceDetached);
 		unregisterReceiver(mUsbPermissionReceiver);
 

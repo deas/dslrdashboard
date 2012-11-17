@@ -1,5 +1,5 @@
 obj/local/armeabi-v7a/objs/dslrdashboard/dslrdashboard.o: \
- jni/dslrdashboard.cpp \
+ jni/dslrdashboard.cpp jni/dslrdashboard.h \
  /home/hubaiz/NVPACK/android-ndk-r8b/platforms/android-14/arch-arm/usr/include/string.h \
  /home/hubaiz/NVPACK/android-ndk-r8b/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
  /home/hubaiz/NVPACK/android-ndk-r8b/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -72,6 +72,8 @@ obj/local/armeabi-v7a/objs/dslrdashboard/dslrdashboard.o: \
  /home/hubaiz/NVPACK/android-ndk-r8b/platforms/android-14/arch-arm/usr/include/linux/in6.h \
  /home/hubaiz/NVPACK/android-ndk-r8b/platforms/android-14/arch-arm/usr/include/linux/ipv6.h \
  /home/hubaiz/NVPACK/android-ndk-r8b/platforms/android-14/arch-arm/usr/include/netinet/in6.h
+
+jni/dslrdashboard.h:
 
 /home/hubaiz/NVPACK/android-ndk-r8b/platforms/android-14/arch-arm/usr/include/string.h:
 

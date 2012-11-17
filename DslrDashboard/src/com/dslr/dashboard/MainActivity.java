@@ -23,6 +23,7 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.List;
+
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.ComponentName;
@@ -498,7 +499,7 @@ public class MainActivity extends ActivityBase implements IDslrActivity {
 				return true;
 			case R.id.menu_action_image_browse:
 
-				Intent ipIntent = new Intent(this, ImageBrowseActivity.class);
+				Intent ipIntent = new Intent(this, DslrImageBrowserActivity.class);
 				ipIntent.setAction(Intent.ACTION_VIEW);
 				ipIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				this.startActivity(ipIntent);

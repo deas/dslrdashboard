@@ -17,59 +17,7 @@
 
  */
 
-#include <string.h>
-#include <jni.h>
-#include <cstring>
-#include <sstream>
-#include <iostream>
-#include <math.h>
-#include <time.h>
-#include <algorithm>
-#include <android/log.h>
-#include <android/bitmap.h>
-#include <exiv2/exiv2.hpp>
-#include <libraw/libraw.h>
-#include <netinet/in.h>
-
-#define LOG_TAG "dslrdashboard_jni"
-#define LOGI(...) __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
-#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__)
-
-typedef struct
-{
-	uint8_t red;
-	uint8_t green;
-	uint8_t blue;
-	uint8_t alpha;
-} argb;
-
-typedef Exiv2::ExifData::const_iterator (*EasyAccessFct)(const Exiv2::ExifData& ed);
-
-
-extern "C" {
-JNIEXPORT jobject JNICALL Java_com_dslr_dashboard_NativeMethods_loadRawImage(
-	JNIEnv* env, jobject thiz, jstring imgPath);
-
-
-JNIEXPORT jboolean JNICALL Java_com_dslr_dashboard_NativeMethods_loadRawImageThumb(
-	JNIEnv* env, jobject thiz, jstring imgPath, jstring thumbPath);
-
-//JNIEXPORT jobjectArray JNICALL Java_com_dslr_dashboard_NativeMethods_getExifInfo(
-//	JNIEnv* env, jobject thiz, jstring imgPath);
-
-JNIEXPORT jint JNICALL Java_com_dslr_dashboard_NativeMethods_getExifData(
-	JNIEnv* env, jobject thiz, jstring imgPath, jint count, jobject callback);
-
-JNIEXPORT jint JNICALL Java_com_dslr_dashboard_NativeMethods_setGPSExifData(
-	JNIEnv* env, jobject thiz, jstring imgPath, jdouble latitude, jdouble longitude, jdouble altitude);
-
-JNIEXPORT jint JNICALL Java_com_dslr_dashboard_NativeMethods_copyExifData(
-	JNIEnv* env, jobject thiz, jstring source, jstring target);
-
-JNIEXPORT jint JNICALL Java_com_dslr_dashboard_NativeMethods_getRGBHistogram(
-	JNIEnv* env, jobject thiz, jobject lvImage, jintArray rArray, jintArray gArray, jintArray bArray, jintArray lumaArray );
-}
-
+#include <dslrdashboard.h>
 
 // no error reporting, only params check
 void write_ppm(libraw_processed_image_t *img, const char *basename)
@@ -325,52 +273,6 @@ Java_com_dslr_dashboard_NativeMethods_loadRawImage( JNIEnv* env,
 			}
 		   LOGI("Resize completed");
 
-//			jclass bitmapConfig = env->FindClass("android/graphics/Bitmap$Config");
-//			jfieldID rgb888FieldID = env->GetStaticFieldID(bitmapConfig, "ARGB_8888",
-//			    "Landroid/graphics/Bitmap$Config;");
-//			jobject rgb888Obj = env->GetStaticObjectField(bitmapConfig, rgb888FieldID);
-//
-//			jclass bitmapClass = env->FindClass("android/graphics/Bitmap");
-//			jmethodID createBitmapMethodID = env->GetStaticMethodID(bitmapClass,"createBitmap",
-//			    "(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;");
-//
-//			myBitmap = env->CallStaticObjectMethod(bitmapClass, createBitmapMethodID,
-//			    image->width, image->height, rgb888Obj);
-//
-//			LOGI("Populating bitmap");
-//			if (myBitmap)
-//			{
-//			    if ((ret = AndroidBitmap_getInfo(env, myBitmap, &infocolor)) == 0)
-//			    {
-//				    if ((ret = AndroidBitmap_lockPixels(env, myBitmap, &pixelscolor)) == 0)
-//				    {
-//				    	LOGI("Pixels locked, transfering image");
-//				    	uint8_t *raw_data = (uint8_t*)image->data;
-//				        for (int y=0;y<infocolor.height;y++)
-//				        {
-//				        	argb * line = (argb *) pixelscolor;
-//				        	for (int x=0;x<infocolor.width;x++)
-//				        	{
-//				        		//line[x].alpha = 0;
-//				        		line[x].red = raw_data[0];
-//				        		line[x].green = raw_data[1];
-//				        		line[x].blue = raw_data[2];
-//				        		raw_data += 3;
-//				        	}
-//
-//				        	pixelscolor = (char *)pixelscolor + infocolor.stride;
-//				        }
-//				        LOGI("Pixels transfered, unlocking");
-//				        AndroidBitmap_unlockPixels(env, myBitmap);
-//
-//				    }
-//				    else
-//				        LOGE("AndroidBitmap_lockPixels() failed ! error=%d", ret);
-//
-//			    }
-//			    else
-//			        LOGE("AndroidBitmap_getInfo() failed ! error=%d", ret);
-//			}
 
 
  		   LibRaw::dcraw_clear_mem(image);

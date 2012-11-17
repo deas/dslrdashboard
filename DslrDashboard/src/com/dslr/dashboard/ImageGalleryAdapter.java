@@ -167,7 +167,6 @@ public class ImageGalleryAdapter extends BaseAdapter {
 
 			holder.itemLayout = (CheckableLinearLayout) convertView.findViewById(R.id.img_item_layout);
 			holder.imgName = (TextView) convertView.findViewById(R.id.imgName);
-			//holder.checkBox = (CheckBox) convertView.findViewById(R.id.itemCheckBox);
 			holder.thumbImage = (ImageView) convertView.findViewById(R.id.thumbImage);
 
 			convertView.setTag(holder);
@@ -179,76 +178,15 @@ public class ImageGalleryAdapter extends BaseAdapter {
 		
 		holder.thumbImage.setId(position);
 		
-		//convertView.setSelected(helper.isChecked);
 		holder.itemLayout.setChecked(helper.isChecked);
-		//holder.checkBox.setId(position);
 		switch (helper.galleryItemType) {
 		case ImageObjectHelper.DSLR_PICTURE:
 			holder.imgName.setText(helper.objectInfo.filename);
-//			holder.thumbImage.setOnClickListener(new View.OnClickListener() {
-//
-//				public void onClick(View v) {
-//					int id = v.getId();
-//					ImageObjectHelper imgObj = _items.get(id);
-//					if (_imageItemClickedListener != null)
-//						_imageItemClickedListener.onImageItemClicked(imgObj);
-//
-//				}
-//			});
-//			holder.checkBox.setChecked(helper.isChecked);
-//			holder.checkBox.setVisibility(View.VISIBLE);
-//			holder.checkBox.setOnClickListener(new OnClickListener() {
-//
-//				public void onClick(View v) {
-//					CheckBox cb = (CheckBox) v;
-//					int id = cb.getId();
-//					ImageObjectHelper imgObj = _items.get(id);
-//					if (imgObj.isChecked) {
-//						cb.setChecked(false);
-//						imgObj.isChecked = false;
-//					} else {
-//						cb.setChecked(true);
-//						imgObj.isChecked = true;
-//					}
-//					if (_selectionChangedListener != null)
-//						_selectionChangedListener.onSelectionChanged(_items);
-//				}
-//			});
 
 			break;
 
 		case ImageObjectHelper.PHONE_PICTURE:
 			holder.imgName.setText(helper.file.getName());
-//			holder.thumbImage.setOnClickListener(new OnClickListener() {
-//
-//				public void onClick(View v) {
-//					int id = v.getId();
-//					ImageObjectHelper imgObj = _items.get(id);
-//
-//					if (_imageItemClickedListener != null)
-//						_imageItemClickedListener.onImageItemClicked(imgObj);
-//
-//				}
-//			});
-//			holder.checkBox.setChecked(helper.isChecked);
-//			holder.checkBox.setVisibility(View.VISIBLE);
-//			holder.checkBox.setOnClickListener(new OnClickListener() {
-//
-//				public void onClick(View v) {
-//					CheckBox cb = (CheckBox) v;
-//					int id = cb.getId();
-//					ImageObjectHelper imgObj = _items.get(id);
-//					if (imgObj.isChecked) {
-//						cb.setChecked(false);
-//						imgObj.isChecked = false;
-//					} else {
-//						cb.setChecked(true);
-//						imgObj.isChecked = true;
-//					}
-//					if (_selectionChangedListener != null)
-//						_selectionChangedListener.onSelectionChanged(_items);
-//				}
-//			});
 
 			break;
 		}

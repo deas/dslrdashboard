@@ -20,11 +20,14 @@ ROOT_PATH := $(LOCAL_PATH)
 include $(call all-subdir-makefiles)
 include $(CLEAR_VARS)
 
+LOCAL_CFLAGS := $(LOCAL_C_INCLUDES:%=-I%) -O2 -Wall -D__ANDROID__ -DFIXED_POINT -D_ARM_ASSEM_ -D__ANDROID__
+LOCAL_CPPFLAGS := $(LOCAL_C_INCLUDES:%=-I%) -O2 -Wall -D__ANDROID__ -DFIXED_POINT -D_ARM_ASSEM_ -D__ANDROID__
+
 LOCAL_PATH := $(ROOT_PATH)
-LOCAL_CFLAGS := -Wall -Wextra
 
 LOCAL_LDLIBS := -L$(SYSROOT)/usr/lib -llog -ljnigraphics
 LOCAL_MODULE    := dslrdashboard
+
 LOCAL_SRC_FILES := dslrdashboard.cpp
 LOCAL_STATIC_LIBRARIES := exiv2 libraw
 

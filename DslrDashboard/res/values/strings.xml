@@ -34,6 +34,10 @@
     <string name="pref_sdram_location">Save location</string>
     <string name="pref_sdram_prefix">Image name prefix</string>
     <string name="pref_sdram_numbering">Image numbering</string>
+    <string name="pref_gps_category">EXIF GPS location info</string>
+    <string name="pref_gps_enabled">Add GPS location info to image</string>
+    <string name="pref_gps_samples">GPS location samples to take</string>
+    <string name="pref_gps_interval">GPS location sample timeout (min)</string>
     
     <string name="img_preview_exif">Exif</string>
     <string-array name="exifNames">

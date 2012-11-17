@@ -6,6 +6,18 @@
     android:orientation="horizontal" >
 
     <com.dslr.dashboard.CheckableImageView
+        android:id="@+id/phone_images"
+        style="@style/ActionProviderImg"
+        android:src="@drawable/galleryphone"
+        android:background="@drawable/checkableimageview"
+         />
+        <com.dslr.dashboard.CheckableImageView
+        android:id="@+id/camera_images"
+        style="@style/ActionProviderImg"
+        android:src="@drawable/gallerycamera"
+        android:background="@drawable/checkableimageview"
+         />
+    <com.dslr.dashboard.CheckableImageView
         android:id="@+id/load_object_info"
         style="@style/ActionProviderImg"
         android:src="@drawable/content_import_export"
